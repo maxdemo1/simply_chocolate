@@ -1,9 +1,15 @@
+/* BASIC STYLES */
+
+:root {
+    --bg-c: #FAFAFA;
+    --hover-c: #FCF1E0;
+    --main-text-c: #111;
+    --company-first-c: #1E1823;
+    --company--second-c: #FD9222;
+}
+
 body {
     font-family: 'Montserrat',
         sans-serif;
-}
-
-.svg1 {
-    fill: green;
-    stroke: green;
+    background-color: aquamarine;
 }
