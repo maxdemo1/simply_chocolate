@@ -12,7 +12,7 @@
 body {
     font-family: 'Montserrat',
         sans-serif;
-    background-color: gray;
+    background-color: var(--bg-c);
 }
 
 ul,
@@ -88,6 +88,7 @@ header .container {
 .nav-item {
     display: block;
     padding: 1.75rem 0 2.25rem 0;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: inherit;
@@ -240,7 +241,23 @@ header .container {
 
 .advantages-list {
     display: flex;
-    gap: 4.375rem;
+    gap: 5.5rem;
+}
+
+.advantages-list li {
+    position: relative;
+}
+
+.advantages-list li:not(:last-child)::after {
+    content: "";
+    border-radius: 0.0625rem;
+    background-color: rgba(255, 255, 255, 0.50);
+    transform: translate(-50%, -50%) scale(1);
+    position: absolute;
+    right: -1.125rem;
+    top: 50%;
+    height: 7.75rem;
+    width: 0.0625rem;
 }
 
 .advantages-list span {
@@ -320,24 +337,23 @@ header .container {
     gap: 1.1875rem;
 }
 
-/* .taste-link { */
 .taste-link {
     display: inline-block;
-    height: 270px;
-    width: 270px;
-    border: 1px solid var(--company--second-c);
-    border-radius: 15px;
+    height: 16.875rem;
+    width: 16.875rem;
+    border: 0.0625rem solid var(--company--second-c);
+    border-radius: 0.9375rem;
 }
 
 .taste-link img {
-    margin: 28px 36px 36px 28px;
+    margin: 1.75rem 2.25rem 2.25rem 1.75rem;
 }
 
 .taste-link span {
     display: inline-block;
     text-transform: uppercase;
-    margin-left: 28px;
-    font-size: 14px;
+    margin-left: 1.75rem;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1.28;
     letter-spacing: -0.02em;
@@ -358,4 +374,210 @@ header .container {
 
 .taste-list li:nth-child(2n) span {
     color: var(--main-text-c)
+}
+
+.overlay-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.taste-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem;
+    transform: translateY(100%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--bg-c);
+}
+
+.taste-overlay h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+}
+
+.taste-overlay p {
+    display: inline-block;
+    padding: 0.375rem 1.125rem;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.875rem;
+    border-radius: 2.1875rem;
+    border: 0.0625rem solid var(--company--second-c);
+}
+
+.taste-overlay p:nth-child(2) {
+    background-color: var(--company--second-c);
+    color: var(--bg-c);
+}
+
+.taste-overlay p:nth-child(3) {
+    background-color: var(--bg-c);
+    color: var(--main-text-c);
+
+}
+
+.taste-list li:hover .taste-overlay,
+.taste-list li:focus .taste-overlay {
+    transform: translateY(0);
+}
+
+.taste-overlay .taste-overlay-text {
+    border-radius: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 0 0;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+
+}
+
+
+/* HOW ITS MADE */
+
+.how-made .container {
+    padding: 0 2.0625rem 8rem 2.0625rem;
+    background-color: var(--bg-c);
+}
+
+.how-made .container h2 {
+    text-align: center;
+    margin-bottom: 3.125rem;
+    text-transform: uppercase;
+    color: var(--main-text-c);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.166;
+    letter-spacing: -0.03em;
+}
+
+.how-made .container h2 span {
+    color: var(--company--second-c);
+}
+
+.video-and-text-container {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.video-container {
+    cursor: pointer;
+    width: 37.5rem;
+    position: relative;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+}
+
+.video-container svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.how-made-text-container {
+    border-radius: 0.9375rem;
+    max-width: 51.125rem;
+    padding: 2rem;
+    background-color: var(--second-text-c);
+}
+
+.how-made-text-container ul {
+    list-style-type: disc;
+}
+
+.how-made-text-container p {
+    margin-bottom: 1.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.how-made-text-container li {
+    margin-bottom: 1.5rem;
+    list-style-position: inside;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+/* OUR-PRODUCTS */
+
+.our-products .container {
+    padding: 0 2.0625rem 8rem 2.0625rem;
+}
+
+.our-products .container h2 {
+    text-align: center;
+    margin-bottom: 3.125rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.166;
+    letter-spacing: -0.03em;
+}
+
+.our-products .container h2 span {
+    color: var(--company--second-c);
+}
+
+.products-list {
+    display: flex;
+    gap: 1.125rem;
+    overflow: auto;
+    scroll-behavior: auto;
+    flex-wrap: wrap;
+
+}
+
+.products-list li {
+    background-color: var(--second-text-c);
+    width: 16.875rem;
+    border-radius: 0.9375rem;
+    text-align: center;
+    border: 0.0625rem solid rgba(17, 17, 17, 0.10);
+}
+
+.products-list li h3 {
+    margin: 0.5rem 0 2px 0;
+    color: var(--main-text-c);
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
+
+.products-list li p {
+    margin-bottom: 1.125rem;
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.166;
+    letter-spacing: -0.02em;
+}
+
+.products-list li span {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--main-text-c);
+    background-color: var(--bg-c);
+    border-radius: 6.25rem;
+    border: 0.0625rem solid rgba(17, 17, 17, 0.10);
 }
