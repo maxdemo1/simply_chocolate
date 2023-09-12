@@ -516,7 +516,8 @@ header .container {
 /* OUR-PRODUCTS */
 
 .our-products .container {
-    padding: 0 2.0625rem 8rem 2.0625rem;
+    position: relative;
+    padding: 0 2.0625rem 10.8125rem 2.0625rem;
 }
 
 .our-products .container h2 {
@@ -533,16 +534,21 @@ header .container {
     color: var(--company--second-c);
 }
 
-.products-list {
+.products-list,
+.products-list-part-two {
     display: flex;
     gap: 1.125rem;
     overflow: auto;
     scroll-behavior: auto;
     flex-wrap: wrap;
-
 }
 
-.products-list li {
+.products-list-part-two {
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products-list li,
+.products-list-part-two li {
     background-color: var(--second-text-c);
     width: 16.875rem;
     border-radius: 0.9375rem;
@@ -550,7 +556,15 @@ header .container {
     border: 0.0625rem solid rgba(17, 17, 17, 0.10);
 }
 
-.products-list li h3 {
+.products-list a,
+.products-list-part-two a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.products-list li h3,
+.products-list-part-two li h3 {
     margin: 0.5rem 0 2px 0;
     color: var(--main-text-c);
     text-transform: uppercase;
@@ -560,7 +574,8 @@ header .container {
     letter-spacing: -0.02em;
 }
 
-.products-list li p {
+.products-list li p,
+.products-list-part-two li p {
     margin-bottom: 1.125rem;
     color: rgba(17, 17, 17, 0.70);
     font-size: 0.75rem;
@@ -569,7 +584,8 @@ header .container {
     letter-spacing: -0.02em;
 }
 
-.products-list li span {
+.products-list li span,
+.products-list-part-two li span {
     display: inline-block;
     margin-bottom: 2rem;
     padding: 0.5rem 1.25rem;
@@ -580,4 +596,43 @@ header .container {
     background-color: var(--bg-c);
     border-radius: 6.25rem;
     border: 0.0625rem solid rgba(17, 17, 17, 0.10);
+}
+
+.products-overlay-box {
+    position: relative;
+    overflow: hidden;
+    max-width: 1134px;
+}
+
+.overlay-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translatey(-100%);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.more-products:hover+.products-overlay-box .overlay-part {
+    transform: translatey(0);
+}
+
+.products-overlay-box .overlay-part:hover {
+    transform: translatey(0);
+}
+
+.more-products {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 70px;
+    width: 30%;
+    cursor: pointer;
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    color: var(--main-text-c);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
