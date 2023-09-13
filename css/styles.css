@@ -244,11 +244,11 @@ header .container {
     gap: 5.5rem;
 }
 
-.advantages-list li {
+.advantages-list .advantages-item {
     position: relative;
 }
 
-.advantages-list li:not(:last-child)::after {
+.advantages-list .advantages-item:not(:last-child)::after {
     content: "";
     border-radius: 0.0625rem;
     background-color: rgba(255, 255, 255, 0.50);
@@ -504,7 +504,7 @@ header .container {
     line-height: 1.33;
 }
 
-.how-made-text-container li {
+.how-made-text-container .how-made-text {
     margin-bottom: 1.5rem;
     list-style-position: inside;
     font-size: 0.875rem;
@@ -549,8 +549,13 @@ header .container {
 
 .products-list li,
 .products-list-part-two li {
+    flex-basis: calc((100% - 3.375rem) / 4);
+    ;
+}
+
+.products-list .product-content,
+.products-list-part-two .product-content {
     background-color: var(--second-text-c);
-    width: 16.875rem;
     border-radius: 0.9375rem;
     text-align: center;
     border: 0.0625rem solid rgba(17, 17, 17, 0.10);
@@ -563,8 +568,8 @@ header .container {
     height: 100%;
 }
 
-.products-list li h3,
-.products-list-part-two li h3 {
+.products-list .product-content h3,
+.products-list-part-two .product-content h3 {
     margin: 0.5rem 0 2px 0;
     color: var(--main-text-c);
     text-transform: uppercase;
@@ -574,8 +579,8 @@ header .container {
     letter-spacing: -0.02em;
 }
 
-.products-list li p,
-.products-list-part-two li p {
+.products-list .product-content p,
+.products-list-part-two .product-content p {
     margin-bottom: 1.125rem;
     color: rgba(17, 17, 17, 0.70);
     font-size: 0.75rem;
@@ -584,8 +589,8 @@ header .container {
     letter-spacing: -0.02em;
 }
 
-.products-list li span,
-.products-list-part-two li span {
+.products-list .product-content span,
+.products-list-part-two .product-content span {
     display: inline-block;
     margin-bottom: 2rem;
     padding: 0.5rem 1.25rem;
