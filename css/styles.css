@@ -152,7 +152,7 @@ header .container {
     justify-content: center;
 }
 
-.hero-buttons button {
+.buy-now-button {
     padding: 0.93rem 2.5rem;
     border-radius: 6.25rem;
     margin-right: 0.875rem;
@@ -166,8 +166,8 @@ header .container {
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-buttons button:hover,
-.hero-buttons button:focus {
+.buy-now-button:hover,
+.buy-now-button:focus {
     background-color: var(--hover-c);
     color: var(--company--second-c);
     border-color: var(--hover-c);
@@ -244,11 +244,11 @@ header .container {
     gap: 5.5rem;
 }
 
-.advantages-list .advantages-item {
+.advantages-list li {
     position: relative;
 }
 
-.advantages-list .advantages-item:not(:last-child)::after {
+.advantages-list li:not(:last-child)::after {
     content: "";
     border-radius: 0.0625rem;
     background-color: rgba(255, 255, 255, 0.50);
@@ -260,7 +260,7 @@ header .container {
     width: 0.0625rem;
 }
 
-.advantages-list span {
+.advantages-item span {
     display: block;
     width: 3.875rem;
     height: 3.875rem;
@@ -269,7 +269,7 @@ header .container {
     border-radius: 50%;
 }
 
-.advantages-list svg {
+.advantages-item svg {
     fill: var(--company--second-c);
     position: absolute;
     top: 50%;
@@ -278,7 +278,7 @@ header .container {
 
 }
 
-.advantages-list h3 {
+.advantages-item h3 {
     color: var(--second-text-c);
     font-size: 1.125rem;
     font-weight: 600;
@@ -288,7 +288,7 @@ header .container {
     margin-top: 1.375rem;
 }
 
-.advantages-list p {
+.advantages-item p {
     color: rgba(255, 255, 255, 0.70);
     font-size: 0.875rem;
     font-weight: 400;
@@ -547,10 +547,12 @@ header .container {
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.products-list li,
+.products-list li {
+    flex-basis: calc((100% - 3.375rem) / 4);
+}
+
 .products-list-part-two li {
     flex-basis: calc((100% - 3.375rem) / 4);
-    ;
 }
 
 .products-list .product-content,
@@ -610,12 +612,14 @@ header .container {
 }
 
 .overlay-part {
+    width: 1134px;
     position: absolute;
     top: 0;
     left: 0;
     transform: translatey(-100%);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .more-products:hover+.products-overlay-box .overlay-part {
     transform: translatey(0);
@@ -641,3 +645,57 @@ header .container {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+/* TOP SELLERS */
+
+.top-sellers .container {
+    padding: 0 2rem 4rem 2rem;
+}
+
+.top-sellers .container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.166;
+    letter-spacing: -0.03em;
+    color: var(--main-text-c)
+}
+
+.top-sellers .container h2 span {
+    color: var(--company--second-c)
+}
+
+.top-sellers-list {
+    display: flex;
+    gap: 1rem;
+    margin: 3.125rem 0 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-sellers-item {
+    border-radius: 0.9375rem;
+    overflow: hidden;
+}
+
+.top-sellers-final-part {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.top-sellers-text {
+    max-width: 407px;
+    color: var(--main-text-c);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.top-sellers-final-part .buy-now-button {
+    font-size: 1.125rem;
+}
+
+/* CHOCO-LOVED */
