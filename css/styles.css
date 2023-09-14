@@ -699,3 +699,67 @@ header .container {
 }
 
 /* CHOCO-LOVED */
+
+.choco-loved .container {
+    padding: 4rem 2rem;
+}
+
+.choco-loved .container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.166;
+    letter-spacing: -0.03em;
+    color: var(--main-text-c)
+}
+
+.choco-loved .container h2 span {
+    color: var(--company--second-c)
+}
+
+.employees-list {
+    display: flex;
+    gap: 1.75rem;
+    text-align: center;
+    padding: 91px 0 94px 0;
+}
+
+.employees-list li {
+    width: calc((100% - 56px) / 3);
+}
+
+.employee {
+    border-radius: 15px;
+    background-color: var(--second-text-c);
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+    position: relative;
+    min-height: 200px;
+}
+
+.employee img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.employee h3 {
+    padding: 56px 0 24px 0;
+    color: var(--main-text-c);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0;
+}
+
+.employee p {
+    padding: 0 24px;
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
