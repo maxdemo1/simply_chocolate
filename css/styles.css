@@ -51,6 +51,13 @@ img {
 
 /* HEADER */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    opacity: 0.9;
+}
+
 header .container {
     background-color: var(--bg-c);
     display: flex;
@@ -86,6 +93,7 @@ header .container {
 }
 
 .nav-item {
+    position: relative;
     display: block;
     padding: 1.75rem 0 2.25rem 0;
     font-size: 0.875rem;
@@ -93,11 +101,34 @@ header .container {
     line-height: 1.14;
     letter-spacing: inherit;
     color: var(--main-text-c);
+    transition: COLOR 250MS cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 46px;
+    height: 3px;
+    border: 0.5px solid rgba(90, 88, 88, 0.1);
+    background-color: rgba(253, 146, 34, 0.5);
+    opacity: 0;
+    border-radius: 20%;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover {
+    color: var(--company--second-c);
+}
+
+.nav-item:hover::after {
+    opacity: 1;
 }
 
 .header-instagram,
 .header-twitter {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--bg-c);
     stroke: var(--main-text-c);
 }
@@ -115,12 +146,17 @@ header .container {
 
 /* HERO */
 .hero {
+    position: relative;
     padding-bottom: 4.5rem;
+}
+
+.anchor-hero {
+    position: absolute;
+    top: -100px;
 }
 
 .hero .container {
     width: 71rem;
-    background-color: var(--bg-c);
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
             rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header2x.png);
     background-repeat: no-repeat;
@@ -446,6 +482,15 @@ header .container {
 
 /* HOW ITS MADE */
 
+.how-made {
+    position: relative;
+}
+
+.anchor-how-made {
+    position: absolute;
+    top: -90px;
+}
+
 .how-made .container {
     padding: 0 2.0625rem 8rem 2.0625rem;
     background-color: var(--bg-c);
@@ -514,6 +559,15 @@ header .container {
 }
 
 /* OUR-PRODUCTS */
+
+.our-products {
+    position: relative;
+}
+
+.anchor-our-products {
+    position: absolute;
+    top: -90px;
+}
 
 .our-products .container {
     position: relative;
@@ -637,7 +691,7 @@ header .container {
     width: 30%;
     cursor: pointer;
     position: absolute;
-    top: 430px;
+    top: 450px;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     color: var(--main-text-c);
@@ -646,7 +700,32 @@ header .container {
     font-weight: 600;
 }
 
+.more-products span {
+    color: var(--second-text-c);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 14px 40px;
+    border-radius: 100px;
+    background-color: var(--company--second-c);
+    cursor: pointer;
+}
+
+.more-products:hover span {
+    background-color: var(--hover-c);
+    color: var(--company--second-c);
+}
+
 /* TOP SELLERS */
+
+.top-sellers {
+    position: relative;
+}
+
+.anchor-top-sellers {
+    position: absolute;
+    top: -90px;
+}
 
 .top-sellers .container {
     padding: 0 2rem 4rem 2rem;
@@ -700,8 +779,17 @@ header .container {
 
 /* CHOCO-LOVED */
 
+.choco-loved {
+    position: relative;
+}
+
+.anchor-choco-loved {
+    position: absolute;
+    top: -20px;
+}
+
 .choco-loved .container {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 0 2rem;
 }
 
 .choco-loved .container h2 {
@@ -718,15 +806,24 @@ header .container {
     color: var(--company--second-c)
 }
 
-.employees-list {
-    display: flex;
-    gap: 1.75rem;
-    text-align: center;
+.employee-list-container {
     padding: 91px 0 94px 0;
 }
 
-.employees-list li {
+.employees-list,
+.employees-list-part-two {
+    display: flex;
+    gap: 1.75rem;
+    text-align: center;
+}
+
+.employees-list li,
+.employees-list-part-two li {
     width: calc((100% - 56px) / 3);
+}
+
+.employees-list-part-two {
+    display: none;
 }
 
 .employee {
@@ -739,6 +836,7 @@ header .container {
 }
 
 .employee img {
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 50%;
@@ -761,5 +859,160 @@ header .container {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.leave-review-button-div {
+    margin: 0 auto 128px auto;
+}
+
+.leave-review-button {
+    margin: 0 auto;
+    display: block;
+    color: var(--main-text-c);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid var(--company--second-c);
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/* EXPLORE THAT */
+
+.explore-that {
+    width: 1200px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+            rgba(17, 17, 17, 0.40)), url(../images/backgrounds/footer2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.explore-that .container {
+    padding: 72px 366px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.explore-that .container h2 {
+    color: var(--second-text-c);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.166;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding: 0 40px;
+}
+
+.explore-that .container p {
+    color: var(--second-text-c);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.explore-that .container button {
+    color: var(--second-text-c);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 14px 40px;
+    border-radius: 100px;
+    background-color: var(--company--second-c);
+    cursor: pointer;
+    border: none;
+}
+
+/* FOOTER */
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--company-first-c);
+    padding: 50px 0;
+}
+
+.footer-top-part {
+    position: relative;
+    margin: 0 32px 82px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-tp-part-one h2 {
+    max-width: 300px;
+    color: var(--second-text-c);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.214;
+    letter-spacing: -0.02em;
+}
+
+.footer-tp-part-one span {
+    color: var(--company--second-c)
+}
+
+.footer-tp-part-two {
+    display: flex;
+    gap: 63px;
+    color: var(--second-text-c);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.286;
+    letter-spacing: -0.02em;
+}
+
+.footer-tp-part-two a {
+    color: inherit;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.footer-links p {
+    margin-bottom: 14px;
+}
+
+.footer-svg a {
+    display: inline-block;
+    stroke: var(--second-text-c);
+    fill: none;
+}
+
+.footer-svg a:first-child {
+    margin-right: 18px;
+}
+
+.footer-top-part::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -62px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.footer-nav nav {
+    margin-left: 32px;
+}
+
+.footer-nav nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-nav a {
+    color: var(--second-text-c);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.143;
     letter-spacing: -0.02em;
 }
