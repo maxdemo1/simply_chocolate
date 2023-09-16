@@ -232,7 +232,6 @@ header .container {
     display: flex;
     justify-content: center;
     align-items: end;
-    gap: 0.875rem;
     padding-bottom: 0.375rem;
 }
 
@@ -244,6 +243,9 @@ header .container {
     line-height: 1.28;
     letter-spacing: -0.03em;
     padding-bottom: 0.7rem;
+    padding-right: 0.875rem;
+    padding-top: 0.5rem;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-down-svg {
@@ -253,6 +255,7 @@ header .container {
     background-color: var(--second-text-c);
     border-radius: 50%;
     margin-top: 0.375rem;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-down svg {
@@ -261,6 +264,19 @@ header .container {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     fill: var(--company--second-c);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-down:hover a {
+    color: var(--company--second-c);
+}
+
+.scroll-down:hover a svg {
+    fill: var(--second-text-c);
+}
+
+.scroll-down:hover .scroll-down-svg {
+    background-color: var(--company--second-c);
 }
 
 /* ADVANTAGES */
@@ -878,6 +894,13 @@ header .container {
     border: 1px solid var(--company--second-c);
     background-color: inherit;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.leave-review-button:hover,
+.leave-review-button:focus {
+    color: var(--bg-c);
+    background-color: var(--company--second-c);
 }
 
 /* EXPLORE THAT */
@@ -929,6 +952,13 @@ header .container {
     background-color: var(--company--second-c);
     cursor: pointer;
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.explore-that .container button:hover {
+    color: var(--company--second-c);
+    background-color: var(--hover-c);
 }
 
 /* FOOTER */
