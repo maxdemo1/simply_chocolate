@@ -362,9 +362,34 @@
         <div class="anchor-our-products" id="anchor-our-products"></div>
         <div class="container">
           <h2>Our <span>products</span></h2>
-          <p class="more-products"><span>More products</span></p>
           <div class="products-overlay-box">
-            <ul class="products-list">
+            <p class="visually-hidden">A</p>
+            <div class="select-left-products" id="select-left-products">
+              <svg class="list-checked" width="28" height="13">
+                <use href="./images/icons/sprite.svg#list-checked"></use>
+              </svg>
+              <svg class="list-non-checked" width="13" height="13">
+                <use href="./images/icons/sprite.svg#list-non-checked"></use>
+              </svg>
+            </div>
+            <div class="select-right-products" id="select-right-products">
+              <svg class="list-non-checked" width="13" height="13">
+                <use href="./images/icons/sprite.svg#list-non-checked"></use>
+              </svg>
+              <svg class="list-checked" width="28" height="13">
+                <use href="./images/icons/sprite.svg#list-checked"></use>
+              </svg>
+            </div>
+            <form class="products-form-body">
+              <input
+                type="checkbox"
+                name="productslist"
+                id="productsbutton"
+                class="checkbox-button-products"
+                checked
+              />
+            </form>
+            <ul class="products-list" id="products-list">
               <li>
                 <div class="product-content">
                   <a href="#">
@@ -440,86 +465,84 @@
                 </div>
               </li>
             </ul>
-            <div class="overlay-part">
-              <ul class="products-list-part-two">
-                <li>
-                  <div class="product-content">
-                    <a href="#">
-                      <img
-                        srcset="
-                          ./images/production/classic.webp  1x,
-                          ./images/production/classic2x.png 2x
-                        "
-                        src="./images/production/classic.webp"
-                        alt="Classic"
-                        width="230"
-                        height="200"
-                      />
-                      <h3>Classic</h3>
-                      <p>Milk chocolate</p>
-                      <span>45 UAH</span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="product-content">
-                    <a href="#"
-                      ><img
-                        srcset="
-                          ./images/production/honey.webp  1x,
-                          ./images/production/honey2x.png 2x
-                        "
-                        src="./images/production/honey.webp"
-                        alt="Honey"
-                        width="230"
-                        height="200"
-                      />
-                      <h3>Honey</h3>
-                      <p>Milk chocolate</p>
-                      <span>50 UAH</span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="product-content">
-                    <a href="#">
-                      <img
-                        srcset="
-                          ./images/production/roasted_fruits.webp  1x,
-                          ./images/production/roasted_fruits2x.png 2x
-                        "
-                        src="./images/production/roasted_fruits.webp"
-                        alt="Roasted fruits"
-                        width="230"
-                        height="200"
-                      />
-                      <h3>Roasted fruits</h3>
-                      <p>Dark chocolate</p>
-                      <span>66 UAH</span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="product-content">
-                    <a href="#"
-                      ><img
-                        srcset="
-                          ./images/production/classic_white.webp  1x,
-                          ./images/production/classic_white2x.png 2x
-                        "
-                        src="./images/production/classic_white.webp"
-                        alt="Classic"
-                        width="230"
-                        height="200"
-                      />
-                      <h3>Classic</h3>
-                      <p>White chocolate</p>
-                      <span>54 UAH</span>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <ul class="products-list-part-two" id="products-list-part-two">
+              <li>
+                <div class="product-content">
+                  <a href="#">
+                    <img
+                      srcset="
+                        ./images/production/classic.webp  1x,
+                        ./images/production/classic2x.png 2x
+                      "
+                      src="./images/production/classic.webp"
+                      alt="Classic"
+                      width="230"
+                      height="200"
+                    />
+                    <h3>Classic</h3>
+                    <p>Milk chocolate</p>
+                    <span>45 UAH</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="product-content">
+                  <a href="#"
+                    ><img
+                      srcset="
+                        ./images/production/honey.webp  1x,
+                        ./images/production/honey2x.png 2x
+                      "
+                      src="./images/production/honey.webp"
+                      alt="Honey"
+                      width="230"
+                      height="200"
+                    />
+                    <h3>Honey</h3>
+                    <p>Milk chocolate</p>
+                    <span>50 UAH</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="product-content">
+                  <a href="#">
+                    <img
+                      srcset="
+                        ./images/production/roasted_fruits.webp  1x,
+                        ./images/production/roasted_fruits2x.png 2x
+                      "
+                      src="./images/production/roasted_fruits.webp"
+                      alt="Roasted fruits"
+                      width="230"
+                      height="200"
+                    />
+                    <h3>Roasted fruits</h3>
+                    <p>Dark chocolate</p>
+                    <span>66 UAH</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="product-content">
+                  <a href="#"
+                    ><img
+                      srcset="
+                        ./images/production/classic_white.webp  1x,
+                        ./images/production/classic_white2x.png 2x
+                      "
+                      src="./images/production/classic_white.webp"
+                      alt="Classic"
+                      width="230"
+                      height="200"
+                    />
+                    <h3>Classic</h3>
+                    <p>White chocolate</p>
+                    <span>54 UAH</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
