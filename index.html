@@ -836,6 +836,141 @@
         </div>
       </div>
     </footer>
+    <div class="buy-form">
+      <div class="form-external-container">
+        <button type="button" class="buy-form-close-button">
+          <svg width="28" height="28" class="buy-form-close">
+            <use href="./images/icons/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="form-content">
+          <h2><span>BUY</span> NOW</h2>
+          <ul>
+            <li>
+              <a href="./index.html" class="buy-form-products-item">
+                <img
+                  srcset="
+                    ./images/buy_now_form/100.webp   1x,
+                    ./images/buy_now_form/100_2x.png 2x
+                  "
+                  src="./images/buy_now_form/100.webp"
+                  alt="Dark chocolate"
+                  width="120"
+                  height="107"
+                />
+                <p>100 g</p>
+              </a>
+            </li>
+            <li>
+              <a href="./index.html" class="buy-form-products-item">
+                <img
+                  srcset="
+                    ./images/buy_now_form/200.webp   1x,
+                    ./images/buy_now_form/200_2x.png 2x
+                  "
+                  src="./images/buy_now_form/200.webp"
+                  alt="White chocolate"
+                  width="120"
+                  height="107"
+                />
+                <p>200 g</p>
+              </a>
+            </li>
+            <li>
+              <a href="./index.html" class="buy-form-products-item">
+                <img
+                  srcset="
+                    ./images/buy_now_form/300.webp   1x,
+                    ./images/buy_now_form/300_2x.png 2x
+                  "
+                  src="./images/buy_now_form/300.webp"
+                  alt="Milk chocolate"
+                  width="120"
+                  height="107"
+                />
+                <p>300 g</p>
+              </a>
+            </li>
+          </ul>
+          <form class="buy-now-form-content">
+            <div class="form-item-container">
+              <label for="user-personal-info">Personal information</label>
+              <div class="user-personal-info-container">
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-personal-info"
+                  class="buy-form-input"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="user-surname"
+                  id="user-personal-info"
+                  class="buy-form-input"
+                  placeholder="Surname"
+                />
+              </div>
+            </div>
+            <div class="form-item-container">
+              <label for="user-email">Email</label>
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="buy-form-input"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-item-container">
+              <label for="user-phone">Phone number</label>
+              <div class="tel-input-container">
+                <svg width="32" height="24" class="ukrainian-flag-icon">
+                  <use href="./images/icons/sprite.svg#ukrainian-flag"></use>
+                </svg>
+                <p class="country-code">+380</p>
+                <input
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                  class="buy-form-input"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-item-container">
+              <label for="user-payment-card">Card number</label>
+              <div class="card-input-container">
+                <svg width="32" height="20" class="mastercard-icon">
+                  <use href="./images/icons/sprite.svg#mastercard"></use>
+                </svg>
+                <input
+                  type="text"
+                  name="user-payment-card"
+                  id="user-payment-card"
+                  class="buy-form-input"
+                  placeholder="Enter card"
+                />
+              </div>
+            </div>
+            <div class="form-item-container">
+              <label for="user-comment">Comment</label>
+              <textarea
+                class="buy-form-textarea"
+                name="user-comment"
+                id="user-comment"
+                cols="30"
+                rows="10"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+            <button class="submit-form-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>

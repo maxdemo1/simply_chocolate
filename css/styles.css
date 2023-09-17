@@ -1087,3 +1087,218 @@ footer .container {
     line-height: 1.143;
     letter-spacing: -0.02em;
 }
+
+/* BUY FORM */
+
+.buy-form {
+    position: relative;
+    margin-top: 100px;
+}
+
+.form-external-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 48px;
+    max-width: 610px;
+    background-color: var(--bg-c);
+    border-radius: 15px;
+    border: 1px solid black
+}
+
+.buy-form-close-button {
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.buy-form-close {
+    stroke: var(--main-text-c);
+}
+
+.buy-form-close-button:hover .buy-form-close {
+    stroke: var(--company--second-c);
+}
+
+.form-content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-text-c);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.166;
+    letter-spacing: -0.03em;
+}
+
+.form-content h2 span {
+    color: var(--company--second-c);
+}
+
+.form-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0 40px 0;
+}
+
+.buy-form-products-item {
+    display: block;
+    border-radius: 15px;
+    background-color: var(--second-text-c);
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 24px 18px 20px 18px;
+    text-align: center;
+}
+
+.buy-form-products-item img {
+    object-fit: contain;
+    margin-bottom: 14px;
+}
+
+.buy-form-products-item p {
+    color: var(--main-text-c);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 8px 27px;
+    border-radius: 100px;
+    background-color: var(--bg-c);
+    border: 1px solid rgba(17, 17, 17, 0.10);
+}
+
+.form-item-container label {
+    display: block;
+    color: var(--main-text-c);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.buy-form-input:only-of-type {
+    width: 100%;
+}
+
+.user-personal-info-container {
+    display: flex;
+    gap: 21px;
+
+}
+
+.buy-form-input {
+    padding: 22px 24px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    color: var(--main-text-c);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    outline: transparent;
+    transition: border-colo 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-form-textarea {
+    width: 100%;
+    height: 137px;
+    padding: 22px 24px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    color: var(--main-text-c);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    outline: transparent;
+    resize: none;
+    transition: border-colo 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-form-input::placeholder,
+.buy-form-textarea::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.user-personal-info-container .buy-form-input {
+    width: calc((100% - 21px) / 2);
+}
+
+.buy-form-input:focus,
+.buy-form-textarea:focus {
+    border-color: var(--company--second-c);
+}
+
+.tel-input-container {
+    position: relative;
+}
+
+.tel-input-container .buy-form-input {
+    padding-left: 177px;
+}
+
+.ukrainian-flag-icon {
+    position: absolute;
+    top: 22px;
+    left: 24px;
+}
+
+.country-code {
+    position: absolute;
+    top: 26px;
+    left: 74px;
+    color: var(--main-text-c);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.country-code::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: -30px;
+    height: 36px;
+    width: 3px;
+    background-color: rgba(64, 64, 64, 0.15);
+}
+
+.card-input-container {
+    position: relative;
+}
+
+.mastercard-icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.submit-form-button {
+    margin-top: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 14px 40px;
+    background-color: var(--company--second-c);
+    border: none;
+    color: var(--second-text-c);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.submit-form-button:hover,
+.submit-form-button:focus {
+    color: var(--company--second-c);
+    background-color: var(--hover-c);
+}
