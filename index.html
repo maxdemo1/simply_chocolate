@@ -840,8 +840,8 @@
     </footer>
     <div class="buy-form">
       <div class="form-external-container">
-        <button type="button" class="buy-form-close-button">
-          <svg width="28" height="28" class="buy-form-close">
+        <button type="button" class="form-close-button">
+          <svg width="28" height="28" class="form-close">
             <use href="./images/icons/sprite.svg#cross"></use>
           </svg>
         </button>
@@ -849,7 +849,7 @@
           <h2><span>BUY</span> NOW</h2>
           <ul>
             <li>
-              <a href="./index.html" class="buy-form-products-item">
+              <div class="buy-form-products-item">
                 <img
                   srcset="
                     ./images/buy_now_form/100.webp   1x,
@@ -860,11 +860,27 @@
                   width="120"
                   height="107"
                 />
-                <p>100 g</p>
-              </a>
+                <div class="product-weight-container">
+                  <form class="product-weight-form">
+                    <input
+                      type="number"
+                      name="weight"
+                      min="100"
+                      max="10000"
+                      step="50"
+                      value="100"
+                      class="product-weight"
+                      id="weightinput"
+                      maxlength="5"
+                    />
+                  </form>
+                  <p>g</p>
+                  <div id="validationMessage" class="validationMessage"></div>
+                </div>
+              </div>
             </li>
             <li>
-              <a href="./index.html" class="buy-form-products-item">
+              <div class="buy-form-products-item">
                 <img
                   srcset="
                     ./images/buy_now_form/200.webp   1x,
@@ -875,11 +891,27 @@
                   width="120"
                   height="107"
                 />
-                <p>200 g</p>
-              </a>
+                <div class="product-weight-container">
+                  <form class="product-weight-form">
+                    <input
+                      type="number"
+                      name="weight"
+                      min="100"
+                      max="10000"
+                      step="50"
+                      value="200"
+                      class="product-weight"
+                      id="weightinput"
+                      maxlength="5"
+                    />
+                  </form>
+                  <p>g</p>
+                  <div id="validationMessage" class="validationMessage"></div>
+                </div>
+              </div>
             </li>
             <li>
-              <a href="./index.html" class="buy-form-products-item">
+              <div class="buy-form-products-item">
                 <img
                   srcset="
                     ./images/buy_now_form/300.webp   1x,
@@ -890,8 +922,24 @@
                   width="120"
                   height="107"
                 />
-                <p>300 g</p>
-              </a>
+                <div class="product-weight-container">
+                  <form class="product-weight-form">
+                    <input
+                      type="number"
+                      name="weight"
+                      min="100"
+                      max="10000"
+                      step="50"
+                      value="300"
+                      class="product-weight"
+                      id="weightinput"
+                      maxlength="5"
+                    />
+                  </form>
+                  <p>g</p>
+                  <div id="validationMessage" class="validationMessage"></div>
+                </div>
+              </div>
             </li>
           </ul>
           <form class="buy-now-form-content">
@@ -949,7 +997,7 @@
                   <use href="./images/icons/sprite.svg#mastercard"></use>
                 </svg>
                 <input
-                  type="text"
+                  type="tel"
                   name="user-payment-card"
                   id="user-payment-card"
                   class="buy-form-input"
@@ -963,12 +1011,102 @@
                 class="buy-form-textarea"
                 name="user-comment"
                 id="user-comment"
-                cols="30"
-                rows="10"
                 placeholder="Enter text"
               ></textarea>
             </div>
             <button class="submit-form-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="leave-review-form">
+      <div class="leave-review-external-container">
+        <button type="button" class="form-close-button">
+          <svg width="28" height="28" class="form-close">
+            <use href="./images/icons/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="leave-review-content">
+          <h2>Leave a review about <span>our chocolate</span></h2>
+          <form>
+            <div class="leave-review-form-input-container">
+              <input
+                type="text"
+                name="leave-review-user-name"
+                id="leave-review-user-name"
+                class="leave-review-form-input"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="leave-review-form-input-container">
+              <input
+                type="email"
+                name="leave-review-user-email"
+                id="leave-review-user-email"
+                class="leave-review-form-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="leave-review-form-input-container">
+              <div class="tel-input-container">
+                <svg width="32" height="24" class="ukrainian-flag-icon">
+                  <use href="./images/icons/sprite.svg#ukrainian-flag"></use>
+                </svg>
+                <p class="country-code">+380</p>
+                <input
+                  type="tel"
+                  name="leave-review-user-phone"
+                  id="leave-review-user-phone"
+                  class="leave-review-form-input"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+            <div class="leave-review-form-textarea-container">
+              <textarea
+                name="leave-review-user-comment"
+                id="leave-review-user-comment"
+                class="leave-review-textarea"
+                placeholder="Enter text"
+                required
+              ></textarea>
+            </div>
+            <button class="leave-review-form-button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe-form">
+      <div class="subscribe-external-container">
+        <div class="subscribe-form-bg">
+          <button type="button" class="form-close-button">
+            <svg width="28" height="28" class="form-close-subscribe">
+              <use href="./images/icons/sprite.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="subscribe-review-content">
+          <h2>Explore our <br /><span>new chocolate</span> first!</h2>
+
+          <form>
+            <div class="form-and-button-container">
+              <div class="subscribe-form-input-container">
+                <input
+                  type="email"
+                  name="subscribe-user-email"
+                  id="subscribe-user-email"
+                  class="subscribe-form-input"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <button class="subscribe-form-button" type="submit">
+                Subscribe
+              </button>
+            </div>
           </form>
         </div>
       </div>

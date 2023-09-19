@@ -39,3 +39,20 @@ checkbox1.addEventListener('change', function () {
       selectleft.style.opacity = '0';
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const weightinput = document.getElementById("weightinput");
+    const validationMessage = document.getElementById("validationMessage");
+
+    weightinput.addEventListener("input", function () {
+        const inputValue = parseFloat(weightinput.value);
+
+        if (inputValue < 100) {
+            validationMessage.textContent = "Недоступне значення";
+        } else if (inputValue > 10000) {
+            validationMessage.textContent = "Недоступне значення";
+        } else {
+            validationMessage.textContent = "";
+        }
+    });
+});
