@@ -56,3 +56,65 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+    document.body.classList.add(`modal-open-${modalId}`);
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "none";
+    document.body.classList.remove(`modal-open-${modalId}`); 
+}
+
+
+document.getElementById("buy-now-form-open").addEventListener("click", () => {
+    openModal("buy-form");
+});
+
+document.getElementById("buy-now-form-open1").addEventListener("click", () => {
+    openModal("buy-form");
+});
+
+document.getElementById("leave-review-button").addEventListener("click", () => {
+    openModal("leave-review-form");
+});
+
+document.getElementById("subscribe-form-open-button").addEventListener("click", () => {
+    openModal("subscribe-form");
+});
+
+document.getElementById("buy-now-form-close-button").addEventListener("click", () => {
+    closeModal("buy-form");
+});
+
+document.getElementById("leave-review-form-close-button").addEventListener("click", () => {
+    closeModal("leave-review-form");
+});
+
+document.getElementById("subscribe-form-close-button").addEventListener("click", () => {
+    closeModal("subscribe-form");
+});
+
+
+window.addEventListener("click", (event) => {
+    if (event.target === document.getElementById("buy-form")) {
+        closeModal("buy-form");
+    } else if (event.target === document.getElementById("leave-review-form")) {
+        closeModal("leave-review-form");
+    } else if (event.target === document.getElementById("subscribe-form")) {
+        closeModal("subscribe-form");
+    }
+});
+
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeModal("buy-form");
+        closeModal("leave-review-form");
+        closeModal("subscribe-form");
+    }
+});

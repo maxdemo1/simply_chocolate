@@ -80,12 +80,18 @@
             </h1>
             <div class="hero-button-and-scroll">
               <div class="hero-buttons">
-                <button type="button" class="buy-now-button">By now</button>
+                <button
+                  type="button"
+                  class="buy-now-button"
+                  id="buy-now-form-open"
+                >
+                  Buy now
+                </button>
                 <a href="">How it's made</a>
               </div>
               <div class="scroll-down">
-                <a href="">scroll down</a>
-                <a href="#" class="scroll-down-svg">
+                <a href="#anchor-our-products">scroll down</a>
+                <a href="#anchor-our-products" class="scroll-down-svg">
                   <svg width="22" height="22">
                     <use href="./images/icons/sprite.svg#scroll-down"></use>
                   </svg>
@@ -606,7 +612,13 @@
               and was first discovered by the Native American tribe called the
               Mayans.
             </p>
-            <button type="button" class="buy-now-button">Buy now</button>
+            <button
+              type="button"
+              class="buy-now-button"
+              id="buy-now-form-open1"
+            >
+              Buy now
+            </button>
           </div>
         </div>
       </section>
@@ -767,7 +779,11 @@
               />
             </form>
             <div class="leave-review-button-div">
-              <button type="button" class="leave-review-button">
+              <button
+                type="button"
+                class="leave-review-button"
+                id="leave-review-button"
+              >
                 Leave a review
               </button>
             </div>
@@ -786,7 +802,9 @@
             Made with only the finest ingredients and handcrafted with the
             utmost care, each piece is a work of art that is sure to please.
           </p>
-          <button type="button">Subscribe</button>
+          <button type="button" id="subscribe-form-open-button">
+            Subscribe
+          </button>
         </div>
       </section>
       <!-- EXPLORE END -->
@@ -828,19 +846,23 @@
         <div class="footer-nav">
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">How it's made?</a></li>
-              <li><a href="#">Our products</a></li>
-              <li><a href="#">Top sellers</a></li>
-              <li><a href="#">Chocolate is loved</a></li>
+              <li><a href="#anchor-hero">Home</a></li>
+              <li><a href="#anchor-how-made">How it's made?</a></li>
+              <li><a href="#anchor-our-products">Our products</a></li>
+              <li><a href="#anchor-top-sellers">Top sellers</a></li>
+              <li><a href="#anchor-choco-loved">Chocolate is loved</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </footer>
-    <div class="buy-form">
+    <div class="buy-form" id="buy-form">
       <div class="form-external-container">
-        <button type="button" class="form-close-button">
+        <button
+          type="button"
+          class="form-close-button"
+          id="buy-now-form-close-button"
+        >
           <svg width="28" height="28" class="form-close">
             <use href="./images/icons/sprite.svg#cross"></use>
           </svg>
@@ -1012,6 +1034,7 @@
                 name="user-comment"
                 id="user-comment"
                 placeholder="Enter text"
+                required
               ></textarea>
             </div>
             <button class="submit-form-button" type="submit">Submit</button>
@@ -1019,9 +1042,13 @@
         </div>
       </div>
     </div>
-    <div class="leave-review-form">
+    <div class="leave-review-form" id="leave-review-form">
       <div class="leave-review-external-container">
-        <button type="button" class="form-close-button">
+        <button
+          type="button"
+          class="form-close-button"
+          id="leave-review-form-close-button"
+        >
           <svg width="28" height="28" class="form-close">
             <use href="./images/icons/sprite.svg#cross"></use>
           </svg>
@@ -1049,7 +1076,10 @@
                 required
               />
             </div>
-            <div class="leave-review-form-input-container">
+            <div
+              class="leave-review-form-input-container"
+              id="leave-review-form-input-container"
+            >
               <div class="tel-input-container">
                 <svg width="32" height="24" class="ukrainian-flag-icon">
                   <use href="./images/icons/sprite.svg#ukrainian-flag"></use>
@@ -1078,10 +1108,14 @@
         </div>
       </div>
     </div>
-    <div class="subscribe-form">
+    <div class="subscribe-form" id="subscribe-form">
       <div class="subscribe-external-container">
         <div class="subscribe-form-bg">
-          <button type="button" class="form-close-button">
+          <button
+            type="button"
+            class="form-close-button"
+            id="subscribe-form-close-button"
+          >
             <svg width="28" height="28" class="form-close-subscribe">
               <use href="./images/icons/sprite.svg#cross"></use>
             </svg>
