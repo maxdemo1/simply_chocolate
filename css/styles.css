@@ -1129,9 +1129,9 @@ footer .container {
 
 .form-external-container {
     position: absolute;
-    top: 43%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -42%) scale(1);
+    transform: translate(-50%, -35%) scale(1);
     padding: 48px;
     width: 610px;
     background-color: var(--bg-c);
