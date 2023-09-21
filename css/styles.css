@@ -65,6 +65,7 @@ header {
 }
 
 header .container {
+    position: relative;
     background-color: var(--bg-c);
     display: flex;
     justify-content: space-between;
@@ -148,6 +149,14 @@ header .container {
 .header-twitter:focus,
 .header-twitter:hover {
     stroke: var(--company--second-c);
+}
+
+.mobile-menu-icon-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -561,6 +570,7 @@ header .container {
 
 .how-made-text-container ul {
     list-style-type: disc;
+    padding-left: 16px;
 }
 
 .how-made-text-container p {
@@ -1621,4 +1631,290 @@ footer .container {
 .subscribe-form-button:focus {
     color: var(--company--second-c);
     background-color: var(--hover-c);
+}
+
+/* MOBILE-NAV/MENU */
+
+.mobile-menu {
+    margin: 0 auto;
+    background-color: var(--company-first-c);
+    position: relative;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 58%;
+    height: 100vh;
+    visibility: hidden;
+}
+
+.mobile-menu-close-button {
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu-close {
+    stroke: var(--second-text-c);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close-button:hover .mobile-menu-close {
+    scale: 1.4;
+    stroke: var(--company--second-c)
+}
+
+.mobile-nav {
+    text-align: center;
+    padding-top: 17vh;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile-nav a {
+    color: var(--second-text-c);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.mobile-nav a:hover {
+    color: var(--company--second-c);
+}
+
+.mobile-nav a::after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    background-color: var(--company--second-c);
+    opacity: 0;
+    border-radius: 20%;
+    transform: translateX(-30%);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav a:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.mobile-menu-social-networks {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    fill: var(--company-first-c);
+}
+
+.mobile-menu-social-networks .header-instagram svg,
+.mobile-menu-social-networks .header-twitter svg {
+    fill: none;
+    stroke: var(--second-text-c);
+}
+
+.nav-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 46px;
+    height: 3px;
+    border: 0.5px solid rgba(90, 88, 88, 0.1);
+    background-color: rgba(253, 146, 34, 0.5);
+    opacity: 0;
+    border-radius: 20%;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+    /* HEADER */
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header-logo-and-nav {
+        padding: 25px 0 19px 20px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .choco-icon {
+        height: 21px;
+        width: 21px;
+        padding-bottom: 4px;
+    }
+
+    .page-nav,
+    .header-social-networks {
+        display: none;
+    }
+
+    .mobile-menu-icon-container {
+        display: block;
+    }
+
+    /*  HERO */
+
+    .hero .container {
+        padding: 0 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header_mobile.webp);
+        padding: 395px 20px 20px 20px;
+    }
+
+    .catchword {
+        font-size: 20px;
+    }
+
+    .hero-button-and-scroll {
+        flex-direction: column;
+        align-items: start;
+        gap: 32px;
+    }
+
+    .hero-buttons {
+        gap: 14px;
+    }
+
+    .buy-now-button {
+        padding: 12px 28px;
+        margin: 0;
+    }
+
+    .hero-buttons a {
+        padding: 12px 28px;
+    }
+
+    .scroll-down {
+        padding-bottom: 0;
+    }
+
+    .scroll-down a {
+        font-size: 12px;
+        line-height: 1.166;
+        padding-top: 0;
+        padding-bottom: 8px;
+        padding-right: 12px;
+    }
+
+    .scroll-down .scroll-down-svg {
+        margin-top: 0;
+        width: 28px;
+        height: 28px;
+    }
+
+    .scroll-down .scroll-down-svg svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* ADVANTAGES */
+
+    .advantages .container {
+        padding: 20px
+    }
+
+    .advantages-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .advantages-list li::after {
+        display: none;
+    }
+
+    /* TASTE */
+
+    .taste .container {
+        padding: 72px 20px;
+    }
+
+    .taste h2 {
+        font-size: 20px;
+        line-height: 1.2;
+        max-width: 283px;
+    }
+
+    .taste-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .taste-list li {
+        margin: 0 auto;
+    }
+
+    .taste-link {
+        width: 335px;
+    }
+
+    .taste-link img {
+        display: block;
+        width: 224px;
+        height: 171px;
+        margin: 28px auto 25px auto;
+        object-fit: contain;
+    }
+
+    /* HOW MADE */
+
+    .how-made .container {
+        padding: 0 20px 72px 20px;
+    }
+
+    .how-made .container h2 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 32px;
+    }
+
+    .video-and-text-container {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .video-container img {
+        height: 500px;
+        width: 335px;
+        object-fit: cover;
+        text-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .how-made-text-container {
+        padding: 0 14px 20px 14px;
+    }
+
+    .how-made-text-container .how-made-text {
+        margin-bottom: 18px;
+    }
 }
