@@ -118,3 +118,27 @@ window.addEventListener("keydown", (event) => {
         closeModal("subscribe-form");
     }
 });
+
+const slider = document.querySelector('.products-list-slide-container .products-list'); // Уточнение выбора по классу контейнера
+const prevBtn = document.getElementById('slide-left');
+const nextBtn = document.getElementById('slide-right');
+const sliderItems = slider.querySelectorAll('li');
+let currentIndex = 0;
+
+function updateSlider() {
+    const itemWidth = sliderItems[0].offsetWidth;
+    slider.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
+    updateSlider();
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % sliderItems.length;
+    updateSlider();
+});
+
+// Начнем с первого элемента
+updateSlider();

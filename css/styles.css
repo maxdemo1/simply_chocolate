@@ -803,6 +803,10 @@ header .container {
     font-size: 1.125rem;
 }
 
+.slide-body {
+    display: none;
+}
+
 /* CHOCO-LOVED */
 
 .choco-loved {
@@ -837,6 +841,7 @@ header .container {
     position: relative;
     width: 1136px;
     overflow: hidden;
+    height: 400px;
 }
 
 .employees-list,
@@ -939,7 +944,7 @@ header .container {
 }
 
 .leave-review-button {
-    margin: 413px auto 0 auto;
+    margin: 0 auto 0 auto;
     display: block;
     color: var(--main-text-c);
     font-size: 18px;
@@ -957,6 +962,10 @@ header .container {
 .leave-review-button:focus {
     color: var(--bg-c);
     background-color: var(--company--second-c);
+}
+
+.employee-scroll-container {
+    display: none;
 }
 
 /* EXPLORE THAT */
@@ -1777,6 +1786,7 @@ footer .container {
     }
 
     .hero-content {
+        min-width: 335px;
         max-width: 100%;
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
                 rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header_mobile.webp);
@@ -1869,6 +1879,10 @@ footer .container {
         width: 335px;
     }
 
+    .taste-link:last-child {
+        margin-bottom: 0;
+    }
+
     .taste-link img {
         display: block;
         width: 224px;
@@ -1917,4 +1931,190 @@ footer .container {
     .how-made-text-container .how-made-text {
         margin-bottom: 18px;
     }
+
+
+    /* OUR PRODUCTS */
+
+    .our-products .container {
+        padding: 0 20px 72px 20px;
+    }
+
+    .products-overlay-box {
+        display: none;
+    }
+
+    .our-products .container h2 {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .slide-body {
+        display: block;
+    }
+
+    .products-list-slide-container {
+        position: relative;
+        height: 370px;
+        overflow: hidden;
+        width: 335px;
+        margin: 0 auto;
+    }
+
+    .products-list-slide-container .products-list {
+        gap: 0;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .products-list-slide-container li {
+        width: 335px;
+    }
+
+    .product-content {
+        padding: 32px 52px;
+    }
+
+    .products-list-slide-container .products-list .product-content span {
+        margin: 0;
+    }
+
+    .slide-control-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .slide-control-buttons svg {
+        fill: var(--hover-c);
+        width: 30px;
+        height: 30px;
+    }
+
+    .slide-left,
+    .slide-right {
+        opacity: 0.8;
+        border: none;
+        background-color: var(--company--second-c);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .slide-left svg {
+        transform: rotate(90deg);
+    }
+
+    .slide-right svg {
+        transform: rotate(270deg);
+    }
+
+    .slide-right:hover,
+    .slide-left:hover {
+        transform: scale(1.2);
+    }
+
+    /* TOP SELLERS */
+
+    .top-sellers .container {
+        padding: 0 20px 72px 20px;
+        position: relative;
+    }
+
+    .top-sellers .container h2 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .top-sellers-list {
+        margin-top: 2rem;
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 142px;
+    }
+
+    .top-sellers-list li:last-child {
+        display: none;
+    }
+
+    .top-sellers-item {
+        width: 335px;
+        height: 464px;
+        object-fit: cover;
+    }
+
+    .top-sellers-text {
+        position: absolute;
+        top: 548px;
+        width: 306px;
+    }
+
+    .top-sellers-final-part {
+        justify-content: center;
+    }
+
+    .top-sellers-final-part .buy-now-button {
+        font-size: 14px;
+        padding: 12px 28px;
+    }
+
+    /* CHOCO LOVED */
+
+    .choco-loved .container {
+        padding: 0 20px 72px 20px;
+    }
+
+    .employee-scroll-container {
+        display: block;
+    }
+
+    .employee-list-container {
+        display: none;
+    }
+
+    .employee-scroll-list {
+        height: 262px;
+        margin: 32px auto 20px auto;
+        overflow: hidden;
+        width: 335px;
+    }
+
+    .employee-scroll-list .employees-list {
+        position: relative;
+        top: 42px;
+        gap: 0;
+    }
+
+    .employee-scroll-list .employees-list .employee {
+        width: 335px;
+    }
+
+    .employee p {
+        text-align: center;
+    }
+
+    .employee-slide-control-buttons {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .employee-slide-control-buttons svg {
+        fill: var(--hover-c);
+        width: 30px;
+        height: 30px;
+    }
+
+    .leave-review-button-div {
+        margin: 0;
+    }
+
+    .leave-review-button {
+        margin: 0 auto;
+        font-size: 14px;
+        padding: 12px 28px;
+    }
+
 }
