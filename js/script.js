@@ -119,7 +119,7 @@ window.addEventListener("keydown", (event) => {
     }
 });
 
-const slider = document.querySelector('.products-list-slide-container .products-list'); // Уточнение выбора по классу контейнера
+const slider = document.querySelector('.products-list-slide-container .products-list');// Уточнение выбора по классу контейнера
 const prevBtn = document.getElementById('slide-left');
 const nextBtn = document.getElementById('slide-right');
 const sliderItems = slider.querySelectorAll('li');
@@ -142,3 +142,24 @@ nextBtn.addEventListener('click', () => {
 
 // Начнем с первого элемента
 updateSlider();
+
+const slider2 = document.querySelector('.employee-scroll-list .employees-list');
+const prevBtn2 = document.getElementById('slide-left-employee');
+const nextBtn2 = document.getElementById('slide-right-employee');
+const sliderItems2 = slider2.querySelectorAll('li');
+let currentIndex2 = 0;
+
+function updateSlider2() {
+    const itemWidth = sliderItems2[0].offsetWidth;
+    slider2.style.transform = `translateX(-${currentIndex2 * itemWidth}px)`;
+}
+
+prevBtn2.addEventListener('click', () => {
+    currentIndex2 = (currentIndex2 - 1 + sliderItems2.length) % sliderItems2.length;
+    updateSlider2();
+});
+
+nextBtn2.addEventListener('click', () => {
+    currentIndex2 = (currentIndex2 + 1) % sliderItems2.length;
+    updateSlider2();
+})
