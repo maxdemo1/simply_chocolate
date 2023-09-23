@@ -1,3 +1,54 @@
+const MobilemenuModal = (function() {
+    // Приватные переменные и функции
+    const mobilemenumodal = document.getElementById("mobile-menu");
+    const closemobilemenuButton = document.getElementById("mobile-menu-close-button");
+
+    // Приватная функция для закрытия модального окна
+    function close() {
+        mobilemenumodal.style.display = "none";
+    }
+
+    // Публичные методы и свойства
+    return {
+        // Метод для открытия модального окна
+        open: function() {
+            mobilemenumodal.style.display = "block";
+        },
+
+        // Инициализация модуля
+        init: function() {
+            const showmobilemenumodalButton = document.getElementById("mobile-menu-icon-container");
+            showmobilemenumodalButton.addEventListener("click", () => {
+                this.open();
+            });
+
+            closemobilemenuButton.addEventListener("click", () => {
+                close();
+            });
+
+            mobilemenumodal.addEventListener("click", (event) => {
+                if (event.target.tagName === "BUTTON") {
+                    close();
+                }
+                if (event.target.tagName === "A") {
+                    close();
+                }
+            });
+
+            window.addEventListener("click", (event) => {
+                if (event.target === mobilemenumodal) {
+                    close();
+                }
+            });
+        }
+    };
+})();
+
+// Инициализируйте модуль для управления анимированным модальным окном
+MobilemenuModal.init();
+
+
+
 
 const checkbox1 = document.getElementById('employeebutton');
 const first_list = document.getElementById('employee-first-list');
@@ -119,7 +170,7 @@ window.addEventListener("keydown", (event) => {
     }
 });
 
-const slider = document.querySelector('.products-list-slide-container .products-list');// Уточнение выбора по классу контейнера
+const slider = document.querySelector('.products-list-slide-container .products-list');
 const prevBtn = document.getElementById('slide-left');
 const nextBtn = document.getElementById('slide-right');
 const sliderItems = slider.querySelectorAll('li');
@@ -140,7 +191,6 @@ nextBtn.addEventListener('click', () => {
     updateSlider();
 });
 
-// Начнем с первого элемента
 updateSlider();
 
 const slider2 = document.querySelector('.employee-scroll-list .employees-list');
@@ -163,3 +213,6 @@ nextBtn2.addEventListener('click', () => {
     currentIndex2 = (currentIndex2 + 1) % sliderItems2.length;
     updateSlider2();
 })
+
+
+

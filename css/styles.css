@@ -153,10 +153,12 @@ header .container {
 
 .mobile-menu-icon-container {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
     display: none;
     cursor: pointer;
+    border: none;
+    background-color: inherit;
 }
 
 /* HERO */
@@ -1666,13 +1668,28 @@ footer .container {
 .mobile-menu {
     margin: 0 auto;
     background-color: var(--company-first-c);
-    position: relative;
     position: fixed;
     right: 0;
     top: 0;
     width: 58%;
     height: 100vh;
-    visibility: hidden;
+    display: none;
+    z-index: 2;
+}
+
+.mobile-menu-container {
+    animation-name: mobile-menu-animation;
+    animation-duration: 250ms;
+}
+
+@keyframes mobile-menu-animation {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translatex(0);
+    }
 }
 
 .mobile-menu-close-button {
@@ -1741,9 +1758,8 @@ footer .container {
 }
 
 .mobile-menu-social-networks {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    margin-top: 48vh;
+    margin-left: 20px;
     fill: var(--company-first-c);
 }
 
@@ -2422,4 +2438,9 @@ footer .container {
     .mobile-subscribe-button-text {
         display: block;
     }
+
+    /* MOBILE MENU */
+
+
+
 }

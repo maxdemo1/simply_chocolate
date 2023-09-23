@@ -65,11 +65,14 @@
             </svg>
           </a>
         </div>
-        <div class="mobile-menu-icon-container" id="mobile-menu-icon-container">
+        <button
+          class="mobile-menu-icon-container"
+          id="mobile-menu-icon-container"
+        >
           <svg class="mobile-menu-icon" width="28" height="28">
             <use href="./images/icons/sprite.svg#mobile-menu-icon"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </header>
     <main>
@@ -1461,9 +1464,13 @@
         </div>
       </div>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-container">
-        <button type="button" class="mobile-menu-close-button">
+        <button
+          type="button"
+          class="mobile-menu-close-button"
+          id="mobile-menu-close-button"
+        >
           <svg width="28" height="28" class="mobile-menu-close">
             <use href="./images/icons/sprite.svg#cross"></use>
           </svg>
@@ -1471,7 +1478,9 @@
         <div class="mobile-nav">
           <nav>
             <ul>
-              <li><a href="#anchor-hero">Home</a></li>
+              <li>
+                <a href="#anchor-hero" class="mobile-menu-anchor">Home</a>
+              </li>
               <li><a href="#anchor-how-made">How it's made?</a></li>
               <li><a href="#anchor-our-products">Our products</a></li>
               <li><a href="#anchor-top-sellers">Top sellers</a></li>
