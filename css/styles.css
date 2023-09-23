@@ -2213,6 +2213,7 @@ footer .container {
     .form-external-container {
         width: 311px;
         padding: 32px 24px;
+        top: 60%;
     }
 
     .form-close-button {
