@@ -1760,7 +1760,7 @@ footer .container {
 }
 
 .mobile-menu-social-networks {
-    margin-top: auto;
+    margin-top: 0;
     margin-left: 20px;
     margin-bottom: 20px;
     fill: var(--company-first-c);
