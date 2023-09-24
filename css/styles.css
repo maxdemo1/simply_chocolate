@@ -1682,6 +1682,7 @@ footer .container {
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
 }
 
 @keyframes mobile-menu-animation {
@@ -1760,11 +1761,10 @@ footer .container {
 }
 
 .mobile-menu-social-networks {
-    margin-top: 0;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     stroke: var(--second-text-c);
-    fill: var(--company-first-c);
 }
 
 .mobile-menu-social-networks .header-instagram svg,

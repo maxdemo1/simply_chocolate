@@ -1,21 +1,17 @@
 const MobilemenuModal = (function() {
-    // Приватные переменные и функции
+
     const mobilemenumodal = document.getElementById("mobile-menu");
     const closemobilemenuButton = document.getElementById("mobile-menu-close-button");
 
-    // Приватная функция для закрытия модального окна
     function close() {
         mobilemenumodal.style.display = "none";
     }
 
-    // Публичные методы и свойства
     return {
-        // Метод для открытия модального окна
-        open: function() {
+          open: function() {
             mobilemenumodal.style.display = "block";
         },
 
-        // Инициализация модуля
         init: function() {
             const showmobilemenumodalButton = document.getElementById("mobile-menu-icon-container");
             showmobilemenumodalButton.addEventListener("click", () => {
@@ -44,7 +40,6 @@ const MobilemenuModal = (function() {
     };
 })();
 
-// Инициализируйте модуль для управления анимированным модальным окном
 MobilemenuModal.init();
 
 
