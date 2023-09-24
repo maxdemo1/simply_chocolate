@@ -1671,7 +1671,7 @@ footer .container {
     right: 0;
     top: 0;
     width: 58%;
-    height: 100vh;
+    height: 100%;
     display: none;
     z-index: 2;
 }
@@ -1681,7 +1681,7 @@ footer .container {
     animation-duration: 250ms;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100%;
     position: relative;
 }
 
@@ -1766,7 +1766,6 @@ footer .container {
     bottom: 20px;
     left: 20px;
     stroke: var(--second-text-c);
-    background-color: white;
 }
 
 .mobile-menu-social-networks .header-instagram svg,
