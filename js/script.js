@@ -173,7 +173,7 @@ let currentIndex = 0;
 
 function updateSlider() {
     const itemWidth = sliderItems[0].offsetWidth;
-    slider.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    slider.style.transform = `translateX(-${currentIndex * (itemWidth)}px)`;
 }
 
 prevBtn.addEventListener('click', () => {
