@@ -1235,7 +1235,6 @@ footer .container {
     background-color: var(--bg-c);
     border: none;
     text-align: right;
-    -webkit-appearance: textfield;
     color: var(--main-text-c);
     font-size: 14px;
     font-weight: 600;
@@ -1680,6 +1679,9 @@ footer .container {
 .mobile-menu-container {
     animation-name: mobile-menu-animation;
     animation-duration: 250ms;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 @keyframes mobile-menu-animation {
@@ -1758,8 +1760,9 @@ footer .container {
 }
 
 .mobile-menu-social-networks {
-    margin-top: 48vh;
+    margin-top: auto;
     margin-left: 20px;
+    margin-bottom: 20px;
     fill: var(--company-first-c);
 }
 
@@ -2439,8 +2442,7 @@ footer .container {
         display: block;
     }
 
-    /* MOBILE MENU */
-
-
 
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {}
