@@ -1761,10 +1761,12 @@ footer .container {
 }
 
 .mobile-menu-social-networks {
+    display: block;
     position: absolute;
     bottom: 20px;
     left: 20px;
     stroke: var(--second-text-c);
+    background-color: white;
 }
 
 .mobile-menu-social-networks .header-instagram svg,
