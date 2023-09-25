@@ -116,9 +116,9 @@ header .container {
     content: "";
     width: 100%;
     left: 0;
-    top: 46px;
-    height: 3px;
-    border: 0.5px solid rgba(90, 88, 88, 0.1);
+    top: 2.875rem;
+    height: 0.1875rem;
+    border: 0.03125rem solid rgba(90, 88, 88, 0.1);
     background-color: rgba(253, 146, 34, 0.5);
     opacity: 0;
     border-radius: 20%;
@@ -153,8 +153,8 @@ header .container {
 
 .mobile-menu-icon-container {
     position: absolute;
-    top: 15px;
-    right: 13px;
+    top: 0.9375rem;
+    right: 0.8125rem;
     display: none;
     cursor: pointer;
     border: none;
@@ -169,7 +169,7 @@ header .container {
 
 .anchor-hero {
     position: absolute;
-    top: -100px;
+    top: -6.25rem;
 }
 
 .hero-content {
@@ -520,7 +520,7 @@ header .container {
 
 .anchor-how-made {
     position: absolute;
-    top: -90px;
+    top: -5.625rem;
 }
 
 .how-made .container {
@@ -572,7 +572,7 @@ header .container {
 
 .how-made-text-container ul {
     list-style-type: disc;
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 
 .how-made-text-container p {
@@ -599,7 +599,7 @@ header .container {
 
 .anchor-our-products {
     position: absolute;
-    top: -90px;
+    top: -5.625rem;
 }
 
 .our-products .container {
@@ -624,7 +624,7 @@ header .container {
 .products-overlay-box {
     position: relative;
     overflow: hidden;
-    max-width: 1134px;
+    max-width: 70.875rem;
     margin: 0 auto;
 }
 
@@ -658,8 +658,8 @@ header .container {
 
 .checkbox-button-products {
     opacity: 0;
-    width: 100px;
-    height: 50px;
+    width: 6.25rem;
+    height: 3.125rem;
     cursor: pointer;
 
 }
@@ -674,9 +674,9 @@ header .container {
 }
 
 .visually-hidden {
-    width: 1px;
-    height: 1px;
-    margin-top: 396px;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    margin-top: 24.75rem;
     border: 0;
     padding: 0;
     white-space: nowrap;
@@ -691,7 +691,7 @@ header .container {
 
 .products-list li,
 .products-list-part-two li {
-    width: 270px;
+    width: 16.875rem;
 }
 
 .products-list .product-content,
@@ -711,7 +711,7 @@ header .container {
 
 .products-list .product-content h3,
 .products-list-part-two .product-content h3 {
-    margin: 0.5rem 0 2px 0;
+    margin: 0.5rem 0 0.125rem 0;
     color: var(--main-text-c);
     text-transform: uppercase;
     font-size: 1.125rem;
@@ -752,7 +752,7 @@ header .container {
 
 .anchor-top-sellers {
     position: absolute;
-    top: -90px;
+    top: -5.625rem;
 }
 
 .top-sellers .container {
@@ -793,9 +793,9 @@ header .container {
 }
 
 .top-sellers-text {
-    max-width: 407px;
+    max-width: 25.4375rem;
     color: var(--main-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
@@ -818,7 +818,7 @@ header .container {
 
 .anchor-choco-loved {
     position: absolute;
-    top: -20px;
+    top: -1.25rem;
 }
 
 .choco-loved .container {
@@ -841,38 +841,38 @@ header .container {
 
 .employee-list-container {
     position: relative;
-    width: 1136px;
+    width: 71rem;
     overflow: hidden;
-    height: 400px;
+    height: 25rem;
 }
 
 .employees-list,
 .employees-list-part-two {
     display: flex;
-    gap: 28px;
+    gap: 1.75rem;
     position: absolute;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .employees-list {
-    top: 119px;
+    top: 7.4375rem;
     left: 0;
 }
 
 .employees-list-part-two {
-    top: 119px;
+    top: 7.4375rem;
     left: 100%;
 }
 
 .employees-list li,
 .employees-list-part-two li {
-    width: 360px;
+    width: 22.5rem;
 }
 
 .select-left,
 .select-right {
     position: absolute;
-    top: 350px;
+    top: 21.875rem;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -892,25 +892,25 @@ header .container {
 
 .form-body {
     position: absolute;
-    top: 350px;
+    top: 21.875rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .checkbox-button {
     cursor: pointer;
-    width: 100px;
-    height: 50px;
+    width: 6.25rem;
+    height: 3.125rem;
     opacity: 0;
 }
 
 .employee {
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     background-color: var(--second-text-c);
-    border: 1px solid rgba(17, 17, 17, 0.10);
-    box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+    border: 0.0625rem solid rgba(17, 17, 17, 0.10);
+    box-shadow: 0rem 0.5655825rem 1.66072875rem 0rem rgba(215, 228, 249, 0.25);
     position: relative;
-    min-height: 200px;
+    min-height: 12.5rem;
 }
 
 .employee img {
@@ -924,37 +924,37 @@ header .container {
 
 .employee h3 {
     text-align: center;
-    padding: 56px 0 24px 0;
+    padding: 3.5rem 0 1.5rem 0;
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.33;
     letter-spacing: 0;
 }
 
 .employee p {
-    padding: 0 24px;
+    padding: 0 1.5rem;
     color: rgba(17, 17, 17, 0.70);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
 }
 
 .leave-review-button-div {
-    margin: 0 auto 128px auto;
+    margin: 0 auto 8rem auto;
 }
 
 .leave-review-button {
     margin: 0 auto 0 auto;
     display: block;
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     line-height: 1;
-    padding: 14px 40px;
-    border-radius: 100px;
-    border: 1px solid var(--company--second-c);
+    padding: 0.875rem 2.5rem;
+    border-radius: 6.25rem;
+    border: 0.0625rem solid var(--company--second-c);
     background-color: inherit;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -973,7 +973,7 @@ header .container {
 /* EXPLORE THAT */
 
 .explore-that {
-    width: 1200px;
+    width: 75rem;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
             rgba(17, 17, 17, 0.40)), url(../images/backgrounds/footer.webp);
@@ -983,27 +983,27 @@ header .container {
 }
 
 .explore-that .container {
-    padding: 72px 366px;
+    padding: 4.5rem 22.875rem;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
     align-items: center;
     text-align: center;
 }
 
 .explore-that .container h2 {
     color: var(--second-text-c);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.166;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    padding: 0 40px;
+    padding: 0 2.5rem;
 }
 
 .explore-that .container p {
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
@@ -1011,11 +1011,11 @@ header .container {
 
 .explore-that .container button {
     color: var(--second-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     line-height: 1;
-    padding: 14px 40px;
-    border-radius: 100px;
+    padding: 0.875rem 2.5rem;
+    border-radius: 6.25rem;
     background-color: var(--company--second-c);
     cursor: pointer;
     border: none;
@@ -1031,24 +1031,24 @@ header .container {
 /* FOOTER */
 
 footer .container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     background-color: var(--company-first-c);
-    padding: 50px 0;
+    padding: 3.125rem 0;
 }
 
 .footer-top-part {
     position: relative;
-    margin: 0 32px 82px 32px;
+    margin: 0 2rem 5.125rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-tp-part-one h2 {
-    max-width: 300px;
+    max-width: 18.75rem;
     color: var(--second-text-c);
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.214;
     letter-spacing: -0.02em;
@@ -1060,9 +1060,9 @@ footer .container {
 
 .footer-tp-part-two {
     display: flex;
-    gap: 63px;
+    gap: 3.9375rem;
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.286;
     letter-spacing: -0.02em;
@@ -1071,11 +1071,11 @@ footer .container {
 .footer-tp-part-two a {
     color: inherit;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 .footer-links p {
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
 .footer-svg a {
@@ -1090,30 +1090,30 @@ footer .container {
 }
 
 .footer-svg a:first-child {
-    margin-right: 18px;
+    margin-right: 1.125rem;
 }
 
 .footer-top-part::after {
     content: "";
     width: 100%;
     position: absolute;
-    bottom: -62px;
-    height: 1px;
+    bottom: -3.875rem;
+    height: 0.0625rem;
     background: rgba(255, 255, 255, 0.10);
 }
 
 .footer-nav nav {
-    margin-left: 32px;
+    margin-left: 2rem;
 }
 
 .footer-nav nav ul {
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .footer-nav a {
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: -0.02em;
@@ -1153,18 +1153,18 @@ footer .container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -35%) scale(1);
-    padding: 48px;
-    width: 610px;
+    padding: 3rem;
+    width: 38.125rem;
     background-color: var(--bg-c);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
 }
 
 .form-close-button {
     background-color: inherit;
     border: none;
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 1.5rem;
+    right: 1.5rem;
     cursor: pointer;
 }
 
@@ -1181,7 +1181,7 @@ footer .container {
     text-align: center;
     text-transform: uppercase;
     color: var(--main-text-c);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.166;
     letter-spacing: -0.03em;
@@ -1195,21 +1195,21 @@ footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 32px 0 40px 0;
+    margin: 2rem 0 2.5rem 0;
 }
 
 .buy-form-products-item {
     display: block;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     background-color: var(--second-text-c);
-    border: 1px solid rgba(17, 17, 17, 0.10);
-    padding: 24px 18px 20px 18px;
+    border: 0.0625rem solid rgba(17, 17, 17, 0.10);
+    padding: 1.5rem 1.125rem 1.25rem 1.125rem;
     text-align: center;
 }
 
 .buy-form-products-item img {
     object-fit: contain;
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
 .product-weight-container {
@@ -1217,12 +1217,12 @@ footer .container {
 }
 
 .product-weight-form {
-    max-width: 96px;
+    max-width: 6rem;
     margin: 0 auto;
-    padding: 8px 27px;
-    border-radius: 100px;
+    padding: 0.5rem 1.6875rem;
+    border-radius: 6.25rem;
     background-color: var(--bg-c);
-    border: 1px solid rgba(17, 17, 17, 0.10);
+    border: 0.0625rem solid rgba(17, 17, 17, 0.10);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1230,13 +1230,13 @@ footer .container {
 .product-weight {
     cursor: pointer;
     position: relative;
-    left: -24px;
-    max-width: 56px;
+    left: -1.5rem;
+    max-width: 3.5rem;
     background-color: var(--bg-c);
     border: none;
     text-align: right;
     color: var(--main-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1;
 }
@@ -1249,7 +1249,7 @@ footer .container {
 
 .product-weight:focus {
     color: var(--main-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1;
     outline: transparent;
@@ -1257,7 +1257,7 @@ footer .container {
 
 .buy-form-products-item p {
     color: var(--main-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1;
     position: absolute;
@@ -1268,7 +1268,7 @@ footer .container {
 .validationMessage {
     position: absolute;
     top: 120%;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 400;
     line-height: 1;
     color: red;
@@ -1277,12 +1277,12 @@ footer .container {
 .form-item-container label {
     display: block;
     color: var(--main-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.28;
     letter-spacing: -0.02em;
-    margin-bottom: 8px;
-    margin-top: 16px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 .buy-form-input:only-of-type {
@@ -1291,16 +1291,16 @@ footer .container {
 
 .user-personal-info-container {
     display: flex;
-    gap: 21px;
+    gap: 1.3125rem;
 
 }
 
 .buy-form-input {
-    padding: 22px 24px;
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    padding: 1.375rem 1.5rem;
+    border-radius: 0.8125rem;
+    border: 0.09375rem solid rgba(17, 17, 17, 0.05);
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -1310,12 +1310,12 @@ footer .container {
 
 .buy-form-textarea {
     width: 100%;
-    height: 137px;
-    padding: 22px 24px;
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    height: 8.5625rem;
+    padding: 1.375rem 1.5rem;
+    border-radius: 0.8125rem;
+    border: 0.09375rem solid rgba(17, 17, 17, 0.05);
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -1327,14 +1327,14 @@ footer .container {
 .buy-form-input::placeholder,
 .buy-form-textarea::placeholder {
     color: rgba(64, 64, 64, 0.30);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
 }
 
 .user-personal-info-container .buy-form-input {
-    width: calc((100% - 21px) / 2);
+    width: calc((100% - 1.3125rem) / 2);
 }
 
 .buy-form-input:focus,
@@ -1347,21 +1347,21 @@ footer .container {
 }
 
 .tel-input-container .buy-form-input {
-    padding-left: 177px;
+    padding-left: 11.0625rem;
 }
 
 .ukrainian-flag-icon {
     position: absolute;
-    top: 22px;
-    left: 24px;
+    top: 1.375rem;
+    left: 1.5rem;
 }
 
 .country-code {
     position: absolute;
-    top: 26px;
-    left: 74px;
+    top: 1.625rem;
+    left: 4.625rem;
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -1370,10 +1370,10 @@ footer .container {
 .country-code::after {
     content: "";
     position: absolute;
-    top: -9px;
-    right: -30px;
-    height: 36px;
-    width: 3px;
+    top: -0.5625rem;
+    right: -1.875rem;
+    height: 2.25rem;
+    width: 0.1875rem;
     background-color: rgba(64, 64, 64, 0.15);
 }
 
@@ -1383,19 +1383,19 @@ footer .container {
 
 .mastercard-icon {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 1.5rem;
+    right: 1.5rem;
 }
 
 .submit-form-button {
-    margin-top: 18px;
-    border-radius: 100px;
+    margin-top: 1.125rem;
+    border-radius: 6.25rem;
     cursor: pointer;
-    padding: 14px 40px;
+    padding: 0.875rem 2.5rem;
     background-color: var(--company--second-c);
     border: none;
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1428,21 +1428,21 @@ footer .container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -42%) scale(1);
-    padding: 40px;
-    width: 518px;
+    padding: 2.5rem;
+    width: 32.375rem;
     background-color: var(--bg-c);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
 }
 
 .leave-review-external-container h2 {
-    max-width: 298px;
+    max-width: 18.625rem;
     text-transform: uppercase;
     color: var(--main-text-c);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.166;
     letter-spacing: -0.03em;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .leave-review-external-container span {
@@ -1450,16 +1450,16 @@ footer .container {
 }
 
 .leave-review-form-input-container {
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 .leave-review-form-input {
     width: 100%;
-    padding: 22px 24px;
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    padding: 1.375rem 1.5rem;
+    border-radius: 0.8125rem;
+    border: 0.09375rem solid rgba(17, 17, 17, 0.05);
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -1469,12 +1469,12 @@ footer .container {
 
 .leave-review-textarea {
     width: 100%;
-    height: 137px;
-    padding: 22px 24px;
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    height: 8.5625rem;
+    padding: 1.375rem 1.5rem;
+    border-radius: 0.8125rem;
+    border: 0.09375rem solid rgba(17, 17, 17, 0.05);
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -1486,14 +1486,14 @@ footer .container {
 .leave-review-form-input::placeholder,
 .leave-review-textarea::placeholder {
     color: rgba(64, 64, 64, 0.30);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
 }
 
 .tel-input-container .leave-review-form-input {
-    padding-left: 177px;
+    padding-left: 11.0625rem;
 }
 
 .leave-review-form-input:focus,
@@ -1502,14 +1502,14 @@ footer .container {
 }
 
 .leave-review-form-button {
-    margin-top: 18px;
-    border-radius: 100px;
+    margin-top: 1.125rem;
+    border-radius: 6.25rem;
     cursor: pointer;
-    padding: 14px 40px;
+    padding: 0.875rem 2.5rem;
     background-color: var(--company--second-c);
     border: none;
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1542,15 +1542,15 @@ footer .container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -42%) scale(1);
-    width: 538px;
+    width: 33.625rem;
     background-color: var(--bg-c);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     overflow: hidden;
 }
 
 .subscribe-form-bg {
     width: 100%;
-    height: 196px;
+    height: 12.25rem;
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
             rgba(17, 17, 17, 0.40)), url(../images/backgrounds/subscribe-form-bg.webp);
     background-repeat: no-repeat;
@@ -1568,18 +1568,18 @@ footer .container {
 }
 
 .subscribe-review-content {
-    padding: 40px;
+    padding: 2.5rem;
 }
 
 .subscribe-review-content h2 {
-    max-width: 298px;
+    max-width: 18.625rem;
     text-transform: uppercase;
     color: var(--main-text-c);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.166;
     letter-spacing: -0.03em;
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
 }
 
 .subscribe-review-content span {
@@ -1588,22 +1588,22 @@ footer .container {
 
 .form-and-button-container {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     justify-content: center;
 }
 
 .subscribe-form-input-container {
-    width: 313px;
+    width: 19.5625rem;
     background-color: var(--bg-c);
 }
 
 .subscribe-form-input {
     width: 100%;
-    padding: 14px 24px;
-    border-radius: 30px;
-    border: 1.5px solid rgba(64, 64, 64, 0.30);
+    padding: 0.875rem 1.5rem;
+    border-radius: 1.875rem;
+    border: 0.09375rem solid rgba(64, 64, 64, 0.30);
     color: var(--main-text-c);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -1613,7 +1613,7 @@ footer .container {
 
 .subscribe-form-input::placeholder {
     color: rgba(64, 64, 64, 0.30);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -1624,13 +1624,13 @@ footer .container {
 }
 
 .subscribe-form-button {
-    border-radius: 100px;
+    border-radius: 6.25rem;
     cursor: pointer;
-    padding: 17px 40px;
+    padding: 1.0625rem 2.5rem;
     background-color: var(--company--second-c);
     border: none;
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1639,7 +1639,7 @@ footer .container {
 .subscribe-form-button .desktop-subscribe-button-text,
 .subscribe-form-button .mobile-subscribe-button-text {
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     line-height: 1;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1670,7 +1670,7 @@ footer .container {
     position: fixed;
     right: 0;
     top: 0;
-    width: 220px;
+    width: 13.75rem;
     height: 100%;
     display: none;
     z-index: 2;
@@ -1699,8 +1699,8 @@ footer .container {
     border: none;
     background-color: inherit;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
     cursor: pointer;
 }
 
@@ -1723,12 +1723,12 @@ footer .container {
 .mobile-nav ul {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .mobile-nav a {
     color: var(--second-text-c);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
@@ -1745,8 +1745,8 @@ footer .container {
     content: "";
     width: 60%;
     left: 0;
-    bottom: -8px;
-    height: 3px;
+    bottom: -0.5rem;
+    height: 0.1875rem;
     background-color: var(--company--second-c);
     opacity: 0;
     border-radius: 20%;
@@ -1763,8 +1763,8 @@ footer .container {
 .mobile-menu-social-networks {
     display: block;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 1.25rem;
+    left: 1.25rem;
     stroke: var(--second-text-c);
 }
 
@@ -1779,9 +1779,9 @@ footer .container {
     content: "";
     width: 100%;
     left: 0;
-    top: 46px;
-    height: 3px;
-    border: 0.5px solid rgba(90, 88, 88, 0.1);
+    top: 2.875rem;
+    height: 0.1875rem;
+    border: 0.03125rem solid rgba(90, 88, 88, 0.1);
     background-color: rgba(253, 146, 34, 0.5);
     opacity: 0;
     border-radius: 20%;
@@ -1797,17 +1797,17 @@ footer .container {
     }
 
     .header-logo-and-nav {
-        padding: 25px 0 19px 20px;
+        padding: 1.5625rem 0 1.1875rem 1.25rem;
     }
 
     .logo {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .choco-icon {
-        height: 21px;
-        width: 21px;
-        padding-bottom: 4px;
+        height: 1.3125rem;
+        width: 1.3125rem;
+        padding-bottom: 0.25rem;
     }
 
     .page-nav,
@@ -1822,42 +1822,42 @@ footer .container {
     /*  HERO */
 
     .hero {
-        padding-bottom: 72px;
+        padding-bottom: 4.5rem;
     }
 
     .hero .container {
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
     .hero-content {
-        min-width: 335px;
+        min-width: 20.9375rem;
         max-width: 100%;
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
                 rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header_mobile.webp);
-        padding: 395px 20px 20px 20px;
+        padding: 24.6875rem 1.25rem 1.25rem 1.25rem;
     }
 
     .catchword {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .hero-button-and-scroll {
         flex-direction: column;
         align-items: start;
-        gap: 32px;
+        gap: 2rem;
     }
 
     .hero-buttons {
-        gap: 14px;
+        gap: 0.875rem;
     }
 
     .buy-now-button {
-        padding: 12px 28px;
+        padding: 0.75rem 1.75rem;
         margin: 0;
     }
 
     .hero-buttons a {
-        padding: 12px 28px;
+        padding: 0.75rem 1.75rem;
     }
 
     .scroll-down {
@@ -1865,33 +1865,33 @@ footer .container {
     }
 
     .scroll-down a {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 1.166;
         padding-top: 0;
-        padding-bottom: 8px;
-        padding-right: 12px;
+        padding-bottom: 0.5rem;
+        padding-right: 0.75rem;
     }
 
     .scroll-down .scroll-down-svg {
         margin-top: 0;
-        width: 28px;
-        height: 28px;
+        width: 1.75rem;
+        height: 1.75rem;
     }
 
     .scroll-down .scroll-down-svg svg {
-        width: 16px;
-        height: 16px;
+        width: 1rem;
+        height: 1rem;
     }
 
     /* ADVANTAGES */
 
     .advantages .container {
-        padding: 20px
+        padding: 1.25rem
     }
 
     .advantages-list {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .advantages-list li::after {
@@ -1901,18 +1901,18 @@ footer .container {
     /* TASTE */
 
     .taste .container {
-        padding: 72px 20px;
+        padding: 4.5rem 1.25rem;
     }
 
     .taste h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
-        max-width: 283px;
+        max-width: 17.6875rem;
     }
 
     .taste-list {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .taste-list li {
@@ -1920,7 +1920,7 @@ footer .container {
     }
 
     .taste-link {
-        width: 335px;
+        width: 20.9375rem;
     }
 
     .taste-link:last-child {
@@ -1929,27 +1929,27 @@ footer .container {
 
     .taste-link img {
         display: block;
-        width: 224px;
-        height: 171px;
-        margin: 28px auto 25px auto;
+        width: 14rem;
+        height: 10.6875rem;
+        margin: 1.75rem auto 1.5625rem auto;
         object-fit: contain;
     }
 
     /* HOW MADE */
 
     .how-made .container {
-        padding: 0 20px 72px 20px;
+        padding: 0 1.25rem 4.5rem 1.25rem;
     }
 
     .how-made .container h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
     }
 
     .video-and-text-container {
         flex-direction: column;
-        gap: 40px;
+        gap: 2.5rem;
         justify-content: center;
     }
 
@@ -1958,29 +1958,29 @@ footer .container {
     }
 
     .video-container img {
-        height: 500px;
-        width: 335px;
+        height: 31.25rem;
+        width: 20.9375rem;
         object-fit: cover;
         text-align: center;
-        border-radius: 15px;
+        border-radius: 0.9375rem;
         overflow: hidden;
         display: block;
         margin: 0 auto;
     }
 
     .how-made-text-container {
-        padding: 0 14px 20px 14px;
+        padding: 0 0.875rem 1.25rem 0.875rem;
     }
 
     .how-made-text-container .how-made-text {
-        margin-bottom: 18px;
+        margin-bottom: 1.125rem;
     }
 
 
     /* OUR PRODUCTS */
 
     .our-products .container {
-        padding: 0 20px 72px 20px;
+        padding: 0 1.25rem 4.5rem 1.25rem;
     }
 
     .products-overlay-box {
@@ -1988,7 +1988,7 @@ footer .container {
     }
 
     .our-products .container h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 2rem;
     }
 
@@ -1998,9 +1998,9 @@ footer .container {
 
     .products-list-slide-container {
         position: relative;
-        height: 370px;
+        height: 23.125rem;
         overflow: hidden;
-        width: 335px;
+        width: 20.9375rem;
         margin: 0 auto;
     }
 
@@ -2010,11 +2010,11 @@ footer .container {
     }
 
     .products-list-slide-container li {
-        width: 335px;
+        width: 20.9375rem;
     }
 
     .product-content {
-        padding: 32px 52px;
+        padding: 2rem 3.25rem;
     }
 
     .products-list-slide-container .products-list .product-content span {
@@ -2025,14 +2025,14 @@ footer .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
-        margin-top: 20px;
+        gap: 1.875rem;
+        margin-top: 1.25rem;
     }
 
     .slide-control-buttons svg {
         fill: var(--hover-c);
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
 
     .slide-left,
@@ -2043,7 +2043,7 @@ footer .container {
         border-radius: 50%;
         cursor: pointer;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.1875rem 0.5rem;
     }
 
     .slide-left svg {
@@ -2062,20 +2062,20 @@ footer .container {
     /* TOP SELLERS */
 
     .top-sellers .container {
-        padding: 0 20px 72px 20px;
+        padding: 0 1.25rem 4.5rem 1.25rem;
         position: relative;
     }
 
     .top-sellers .container h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
     }
 
     .top-sellers-list {
         margin-top: 2rem;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         flex-direction: column;
-        gap: 142px;
+        gap: 8.875rem;
     }
 
     .top-sellers-list li:last-child {
@@ -2083,15 +2083,15 @@ footer .container {
     }
 
     .top-sellers-item {
-        width: 335px;
-        height: 464px;
+        width: 20.9375rem;
+        height: 29rem;
         object-fit: cover;
     }
 
     .top-sellers-text {
         position: absolute;
-        top: 548px;
-        width: 306px;
+        top: 34.25rem;
+        width: 19.125rem;
     }
 
     .top-sellers-final-part {
@@ -2099,18 +2099,18 @@ footer .container {
     }
 
     .top-sellers-final-part .buy-now-button {
-        font-size: 14px;
-        padding: 12px 28px;
+        font-size: 0.875rem;
+        padding: 0.75rem 1.75rem;
     }
 
     /* CHOCO LOVED */
 
     .choco-loved .container {
-        padding: 0 20px 72px 20px;
+        padding: 0 1.25rem 4.5rem 1.25rem;
     }
 
     .choco-loved .container h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
     }
 
@@ -2123,20 +2123,20 @@ footer .container {
     }
 
     .employee-scroll-list {
-        height: 262px;
-        margin: 32px auto 20px auto;
+        height: 16.375rem;
+        margin: 2rem auto 1.25rem auto;
         overflow: hidden;
-        width: 335px;
+        width: 20.9375rem;
     }
 
     .employee-scroll-list .employees-list {
         position: relative;
-        top: 42px;
+        top: 2.625rem;
         gap: 0;
     }
 
     .employee-scroll-list .employees-list .employee {
-        width: 335px;
+        width: 20.9375rem;
     }
 
     .employee p {
@@ -2144,17 +2144,17 @@ footer .container {
     }
 
     .employee-slide-control-buttons {
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     .employee-slide-control-buttons svg {
         fill: var(--hover-c);
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
 
     .leave-review-button-div {
@@ -2163,8 +2163,8 @@ footer .container {
 
     .leave-review-button {
         margin: 0 auto;
-        font-size: 14px;
-        padding: 12px 28px;
+        font-size: 0.875rem;
+        padding: 0.75rem 1.75rem;
     }
 
     /* EXPLORE THAT */
@@ -2177,43 +2177,43 @@ footer .container {
     }
 
     .explore-that .container {
-        padding: 62px 20px;
+        padding: 3.875rem 1.25rem;
     }
 
     .explore-that .container h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
-        width: 300px;
+        width: 18.75rem;
     }
 
     .explore-that .container p {
-        width: 326px;
+        width: 20.375rem;
     }
 
     .explore-that .container button {
-        padding: 12px 28px;
-        font-size: 14px;
+        padding: 0.75rem 1.75rem;
+        font-size: 0.875rem;
     }
 
     /* FOOTER */
 
     footer .container {
         width: 100%;
-        padding: 32px 0;
+        padding: 2rem 0;
     }
 
     .footer-top-part {
-        margin: 0 20px 64px 20px;
+        margin: 0 1.25rem 4rem 1.25rem;
         flex-wrap: wrap;
-        row-gap: 32px;
+        row-gap: 2rem;
     }
 
     .footer-tp-part-one {
-        width: 300px;
+        width: 18.75rem;
     }
 
     .footer-tp-part-one h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 1.166;
     }
 
@@ -2228,62 +2228,62 @@ footer .container {
     }
 
     .footer-top-part::after {
-        bottom: -32px;
+        bottom: -2rem;
     }
 
     .footer-nav nav ul {
         flex-direction: column;
-        gap: 18px;
+        gap: 1.125rem;
     }
 
     /* BUY FORM */
 
     .form-external-container {
-        width: 311px;
-        padding: 32px 24px;
+        width: 19.4375rem;
+        padding: 2rem 1.5rem;
         top: 60%;
     }
 
     .form-close-button {
-        top: 14px;
-        right: 14px;
+        top: 0.875rem;
+        right: 0.875rem;
     }
 
     .form-content h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
     }
 
     .form-content ul {
-        margin: 32px 0;
+        margin: 2rem 0;
         flex-direction: column;
-        gap: 8px;
+        gap: 0.5rem;
     }
 
     .buy-form-products-item {
-        padding: 8px 16px;
+        padding: 0.5rem 1rem;
         display: flex;
-        gap: 77px;
+        gap: 4.8125rem;
         justify-content: space-between;
         align-items: center;
     }
 
     .buy-form-products-item img {
-        width: 84px;
-        height: 69px;
+        width: 5.25rem;
+        height: 4.3125rem;
 
     }
 
     .product-weight-container {
-        padding: 6px 16px;
-        width: 70px;
-        height: 36px;
-        max-width: 96px;
+        padding: 0.375rem 1rem;
+        width: 4.375rem;
+        height: 2.25rem;
+        max-width: 6rem;
         margin: 0 auto;
-        padding: 8px 27px;
-        border-radius: 100px;
+        padding: 0.5rem 1.6875rem;
+        border-radius: 6.25rem;
         background-color: var(--bg-c);
-        border: 1px solid rgba(17, 17, 17, 0.10);
+        border: 0.0625rem solid rgba(17, 17, 17, 0.10);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -2291,7 +2291,7 @@ footer .container {
         text-align: right;
         border: none;
         padding: 0;
-        width: 40px;
+        width: 2.5rem;
         overflow: hidden;
         position: absolute;
         left: 20%;
@@ -2302,14 +2302,14 @@ footer .container {
     }
 
     .form-item-container label {
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 1.166;
-        margin-top: 18px;
+        margin-top: 1.125rem;
     }
 
     .user-personal-info-container {
         flex-direction: column;
-        gap: 14px
+        gap: 0.875rem
     }
 
     .user-personal-info-container .buy-form-input {
@@ -2318,120 +2318,120 @@ footer .container {
 
     .buy-form-input,
     .buy-form-textarea {
-        padding: 14px 18px;
-        font-size: 14px;
-        border-radius: 8px;
+        padding: 0.875rem 1.125rem;
+        font-size: 0.875rem;
+        border-radius: 0.5rem;
     }
 
     .buy-form-input::placeholder,
     .buy-form-textarea::placeholder {
-        font-size: 14px;
+        font-size: 0.875rem;
         letter-spacing: normal;
     }
 
     .ukrainian-flag-icon {
-        width: 24px;
-        height: 18px;
-        top: 15px;
-        left: 18px;
+        width: 1.5rem;
+        height: 1.125rem;
+        top: 0.9375rem;
+        left: 1.125rem;
     }
 
     .country-code {
-        font-size: 14px;
-        left: 50px;
-        top: 17px;
+        font-size: 0.875rem;
+        left: 3.125rem;
+        top: 1.0625rem;
     }
 
     .country-code::after {
-        height: 25px;
-        right: -12px;
-        top: -5px;
+        height: 1.5625rem;
+        right: -0.75rem;
+        top: -0.3125rem;
     }
 
     .tel-input-container .buy-form-input {
-        padding-left: 106px;
+        padding-left: 6.625rem;
     }
 
     .submit-form-button {
-        padding: 12px 28px;
+        padding: 0.75rem 1.75rem;
     }
 
     /* LEAVE REVIEW FORM */
 
     .leave-review-external-container {
-        width: 311px;
-        padding: 32px 24px;
+        width: 19.4375rem;
+        padding: 2rem 1.5rem;
     }
 
     .leave-review-external-container h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
-        width: 255px;
-        margin-bottom: 32px;
+        width: 15.9375rem;
+        margin-bottom: 2rem;
     }
 
     .leave-review-form-input-container {
-        margin-bottom: 14px;
+        margin-bottom: 0.875rem;
     }
 
     .leave-review-form-input,
     .leave-review-textarea {
-        padding: 14px 18px;
-        border-radius: 8px;
-        font-size: 14px;
+        padding: 0.875rem 1.125rem;
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
     }
 
     .leave-review-form-input::placeholder,
     .leave-review-textarea::placeholder {
-        font-size: 14px;
+        font-size: 0.875rem;
         letter-spacing: normal;
     }
 
     .tel-input-container .leave-review-form-input {
-        padding-left: 106px;
+        padding-left: 6.625rem;
     }
 
     .tel-input-container .ukrainian-flag-icon {
-        top: 14px;
+        top: 0.875rem;
     }
 
     .tel-input-container .country-code {
-        top: 16px
+        top: 1rem
     }
 
     .leave-review-form-button {
-        padding: 12px 28px;
+        padding: 0.75rem 1.75rem;
     }
 
     .subscribe-external-container {
-        width: 311px;
+        width: 19.4375rem;
     }
 
     .subscribe-review-content {
-        padding: 32px 24px;
+        padding: 2rem 1.5rem;
     }
 
     .subscribe-review-content h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     .subscribe-form-input {
-        padding: 14px 104px 14px 18px;
+        padding: 0.875rem 6.5rem 0.875rem 1.125rem;
         width: 100%;
-        font-size: 14px;
-        border-radius: 25px;
+        font-size: 0.875rem;
+        border-radius: 1.5625rem;
     }
 
     .subscribe-form-input::placeholder {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .subscribe-form-button {
-        padding: 14px 28px;
+        padding: 0.875rem 1.75rem;
         position: absolute;
-        border: 3px solid var(--company--second-c);
+        border: 0.1875rem solid var(--company--second-c);
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
             background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         right: 0;
@@ -2463,18 +2463,18 @@ footer .container {
     }
 
     .header-logo-and-nav {
-        padding: 32px 0 32px 32px;
+        padding: 2rem 0 2rem 2rem;
     }
 
     .logo {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.28;
     }
 
     .choco-icon {
-        height: 21px;
-        width: 21px;
-        padding-bottom: 4px;
+        height: 1.3125rem;
+        width: 1.3125rem;
+        padding-bottom: 0.25rem;
     }
 
     .page-nav,
@@ -2484,37 +2484,37 @@ footer .container {
 
     .mobile-menu-icon-container {
         display: block;
-        right: 13px;
-        top: 23px;
+        right: 0.8125rem;
+        top: 1.4375rem;
     }
 
     .mobile-menu-icon-container svg {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
     }
 
     /*  HERO */
 
     .hero {
-        padding-bottom: 50px;
+        padding-bottom: 3.125rem;
     }
 
     .hero .container {
-        padding: 0 32px;
+        padding: 0 2rem;
     }
 
     .hero-content {
-        min-width: 704px;
+        min-width: 44rem;
         max-width: 100%;
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
                 rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header_tablet.webp);
-        padding: 671px 40px 40px 40px;
+        padding: 41.9375rem 2.5rem 2.5rem 2.5rem;
     }
 
     .catchword {
-        font-size: 28px;
+        font-size: 1.75rem;
         line-height: 1.21;
-        max-width: 484px;
+        max-width: 30.25rem;
     }
 
     .scroll-down {
@@ -2522,7 +2522,7 @@ footer .container {
     }
 
     .scroll-down a {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.29;
     }
 
@@ -2530,16 +2530,16 @@ footer .container {
     /* ADVANTAGES */
 
     .advantages .container {
-        padding: 50px 32px;
+        padding: 3.125rem 2rem;
     }
 
     .advantages-list {
-        gap: 33px 60px;
+        gap: 2.0625rem 3.75rem;
         flex-wrap: wrap;
     }
 
     .advantages-list li {
-        flex-basis: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 3.75rem) / 2);
     }
 
     .advantages-list li::after {
@@ -2549,13 +2549,13 @@ footer .container {
     /* TASTE */
 
     .taste .container {
-        padding: 100px 32px;
+        padding: 6.25rem 2rem;
     }
 
     .taste-list {
         position: relative;
-        width: 704px;
-        height: 576px;
+        width: 44rem;
+        height: 36rem;
         margin: 0 auto;
     }
 
@@ -2584,7 +2584,7 @@ footer .container {
     }
 
     .taste-link {
-        width: 336px;
+        width: 21rem;
     }
 
     .taste-link:last-child {
@@ -2593,21 +2593,21 @@ footer .container {
 
     .taste-link img {
         display: block;
-        width: 224px;
-        height: 171px;
-        margin: 28px auto 25px auto;
+        width: 14rem;
+        height: 10.6875rem;
+        margin: 1.75rem auto 1.5625rem auto;
         object-fit: contain;
     }
 
     /* HOW MADE */
 
     .how-made .container {
-        padding: 0 77px 100px 77px;
+        padding: 0 4.8125rem 6.25rem 4.8125rem;
     }
 
     .video-and-text-container {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
         justify-content: center;
     }
 
@@ -2616,11 +2616,11 @@ footer .container {
     }
 
     .video-container img {
-        height: 400px;
-        width: 614px;
+        height: 25rem;
+        width: 38.375rem;
         object-fit: cover;
         text-align: center;
-        border-radius: 15px;
+        border-radius: 0.9375rem;
         overflow: hidden;
         display: block;
         margin: 0 auto;
@@ -2631,13 +2631,13 @@ footer .container {
     }
 
     .how-made-text-container ul {
-        padding-left: 20px;
+        padding-left: 1.25rem;
     }
 
     /* OUR PRODUCTS */
 
     .our-products .container {
-        padding: 0 32px 100px 32px;
+        padding: 0 2rem 6.25rem 2rem;
     }
 
     .products-overlay-box {
@@ -2650,23 +2650,23 @@ footer .container {
 
     .products-list-slide-container {
         position: relative;
-        height: 370px;
+        height: 23.125rem;
         overflow: hidden;
         width: 100%;
         margin: 0 auto;
     }
 
     .products-list-slide-container .products-list {
-        gap: 16px;
+        gap: 1rem;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .products-list-slide-container li {
-        width: 335px;
+        width: 20.9375rem;
     }
 
     .product-content {
-        padding: 32px 52px;
+        padding: 2rem 3.25rem;
     }
 
     .products-list-slide-container .products-list .product-content span {
@@ -2677,14 +2677,14 @@ footer .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
-        margin-top: 32px;
+        gap: 1.875rem;
+        margin-top: 2rem;
     }
 
     .slide-control-buttons svg {
         fill: var(--hover-c);
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
 
     .slide-left,
@@ -2695,7 +2695,7 @@ footer .container {
         border-radius: 50%;
         cursor: pointer;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.1875rem 0.5rem;
     }
 
     .slide-left svg {
@@ -2714,14 +2714,14 @@ footer .container {
     /* TOP SELLERS */
 
     .top-sellers .container {
-        padding: 0 32px 100px 32px;
+        padding: 0 2rem 6.25rem 2rem;
         position: relative;
     }
 
     .top-sellers-list {
-        margin-top: 50px;
-        margin-bottom: 32px;
-        gap: 16px;
+        margin-top: 3.125rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
     }
 
     .top-sellers-list li:last-child {
@@ -2729,24 +2729,24 @@ footer .container {
     }
 
     .top-sellers-item {
-        width: 344px;
-        height: 464px;
+        width: 21.5rem;
+        height: 29rem;
         object-fit: cover;
     }
 
     .top-sellers-final-part {
         justify-content: center;
-        gap: 236px;
+        gap: 14.75rem;
     }
 
     .top-sellers-text {
-        max-width: 306px;
+        max-width: 19.125rem;
     }
 
     /* CHOCO LOVED */
 
     .choco-loved .container {
-        padding: 0 32px 100px 32px;
+        padding: 0 2rem 6.25rem 2rem;
     }
 
     .employee-scroll-container {
@@ -2758,21 +2758,21 @@ footer .container {
     }
 
     .employee-scroll-list {
-        height: 242px;
-        margin: 50px auto 32px auto;
+        height: 15.125rem;
+        margin: 3.125rem auto 2rem auto;
         overflow: hidden;
         width: 100%;
-        min-width: 704px;
+        min-width: 44rem;
     }
 
     .employee-scroll-list .employees-list {
         position: relative;
-        top: 42px;
-        gap: 16px;
+        top: 2.625rem;
+        gap: 1rem;
     }
 
     .employee-scroll-list .employees-list .employee {
-        width: 344px;
+        width: 21.5rem;
     }
 
     .employee p {
@@ -2780,17 +2780,17 @@ footer .container {
     }
 
     .employee-slide-control-buttons {
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     .employee-slide-control-buttons svg {
         fill: var(--hover-c);
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
 
     .leave-review-button-div {
@@ -2811,15 +2811,15 @@ footer .container {
     }
 
     .explore-that .container {
-        padding: 72px 150px;
+        padding: 4.5rem 9.375rem;
     }
 
     .explore-that .container h2 {
-        max-width: 378px;
+        max-width: 23.625rem;
     }
 
     .explore-that .container p {
-        max-width: 467px;
+        max-width: 29.1875rem;
     }
 
     /* FOOTER */
@@ -2829,18 +2829,18 @@ footer .container {
     }
 
     .mobile-menu {
-        width: 290PX;
+        width: 18.125rem;
     }
 
     .mobile-menu-close {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
     }
 }
 
 /* IMAGES DESKTOP */
 
-@media (min-resolution: 192dpi) and (min-width: 1200px) {
+@media (min-resolution: 192dpi) and (min-width: 75rem) {
     .hero-content {
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
                 rgba(17, 17, 17, 0.40)),
