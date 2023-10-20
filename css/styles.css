@@ -43,7 +43,8 @@ a {
     font-style: normal;
 }
 
-img {
+img,
+picture {
     display: inline-block;
     max-width: 100%;
 }
@@ -373,8 +374,6 @@ header .container {
 
 .taste h2,
 .taste p {
-    text-align: center;
-
     margin: 0 auto;
 }
 
@@ -413,8 +412,17 @@ header .container {
     border-radius: 0.9375rem;
 }
 
-.taste-link img {
+.taste-link picture {
+    display: block;
+    object-fit: cover;
+    width: 206px;
+    height: 160px;
     margin: 1.75rem 2.25rem 2.25rem 1.75rem;
+}
+
+.taste-link picture {
+    width: 206px;
+    height: 160px;
 }
 
 .taste-link span {
@@ -551,9 +559,15 @@ header .container {
 .video-container {
     cursor: pointer;
     width: 37.5rem;
+    height: 400px;
     position: relative;
     border-radius: 0.9375rem;
-    overflow: hidden;
+}
+
+.video-container picture,
+.video-container picture img {
+    width: 600px;
+    height: 400px;
 }
 
 .video-container svg {
@@ -784,6 +798,12 @@ header .container {
 .top-sellers-item {
     border-radius: 0.9375rem;
     overflow: hidden;
+}
+
+.top-sellers-item picture,
+.top-sellers-item picture img {
+    width: 368px;
+    height: 464px;
 }
 
 .top-sellers-final-part {
@@ -1923,16 +1943,19 @@ footer .container {
         width: 20.9375rem;
     }
 
-    .taste-link:last-child {
-        margin-bottom: 0;
+    .taste-link picture {
+        width: 224px;
+        height: 171px;
+        margin: 1.75rem auto 1.5625rem auto;
     }
 
-    .taste-link img {
-        display: block;
-        width: 14rem;
-        height: 10.6875rem;
-        margin: 1.75rem auto 1.5625rem auto;
-        object-fit: contain;
+    .taste-link picture img {
+        width: 224px;
+        height: 171px;
+    }
+
+    .taste-link:last-child {
+        margin-bottom: 0;
     }
 
     /* HOW MADE */
@@ -1954,21 +1977,23 @@ footer .container {
     }
 
     .video-container {
-        width: 100%;
-    }
-
-    .video-container img {
-        height: 31.25rem;
-        width: 20.9375rem;
-        object-fit: cover;
-        text-align: center;
-        border-radius: 0.9375rem;
-        overflow: hidden;
-        display: block;
+        width: 335px;
+        height: 500px;
         margin: 0 auto;
     }
 
+
+    .video-container picture,
+    .video-container picture img {
+        width: 335px;
+        height: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+
+
     .how-made-text-container {
+        max-width: 614px;
         padding: 0 0.875rem 1.25rem 0.875rem;
     }
 
@@ -2086,6 +2111,12 @@ footer .container {
         width: 20.9375rem;
         height: 29rem;
         object-fit: cover;
+    }
+
+    .top-sellers-item picture,
+    .top-sellers-item picture img {
+        width: 335px;
+        height: 464px;
     }
 
     .top-sellers-text {
@@ -2587,16 +2618,19 @@ footer .container {
         width: 21rem;
     }
 
-    .taste-link:last-child {
-        margin-bottom: 0;
+    .taste-link picture {
+        width: 224px;
+        height: 171px;
+        margin: 1.75rem auto 1.5625rem auto;
     }
 
-    .taste-link img {
-        display: block;
-        width: 14rem;
-        height: 10.6875rem;
-        margin: 1.75rem auto 1.5625rem auto;
-        object-fit: contain;
+    .taste-link picture img {
+        width: 224px;
+        height: 171px;
+    }
+
+    .taste-link:last-child {
+        margin-bottom: 0;
     }
 
     /* HOW MADE */
@@ -2615,19 +2649,17 @@ footer .container {
         width: 100%;
     }
 
-    .video-container img {
-        height: 25rem;
-        width: 38.375rem;
-        object-fit: cover;
-        text-align: center;
-        border-radius: 0.9375rem;
-        overflow: hidden;
-        display: block;
+    .video-container picture,
+    .video-container picture img {
+        width: 614px;
+        height: 400px;
         margin: 0 auto;
+        display: block;
     }
 
     .how-made-text-container {
         margin: 0 auto;
+        max-width: 614px;
     }
 
     .how-made-text-container ul {
@@ -2731,7 +2763,12 @@ footer .container {
     .top-sellers-item {
         width: 21.5rem;
         height: 29rem;
-        object-fit: cover;
+    }
+
+    .top-sellers-item picture,
+    .top-sellers-item picture img {
+        width: 344px;
+        height: 464px;
     }
 
     .top-sellers-final-part {
