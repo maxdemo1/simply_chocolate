@@ -479,14 +479,14 @@ header .container {
 .taste-link picture {
     display: block;
     object-fit: cover;
-    width: 206px;
-    height: 160px;
+    width: 12.875rem;
+    height: 10rem;
     margin: 1.75rem 2.25rem 2.25rem 1.75rem;
 }
 
 .taste-link picture {
-    width: 206px;
-    height: 160px;
+    width: 12.875rem;
+    height: 10rem;
 }
 
 .taste-link span {
@@ -623,15 +623,15 @@ header .container {
 .video-container {
     cursor: pointer;
     width: 37.5rem;
-    height: 400px;
+    height: 25rem;
     position: relative;
     border-radius: 0.9375rem;
 }
 
 .video-container picture,
 .video-container picture img {
-    width: 600px;
-    height: 400px;
+    width: 37.5rem;
+    height: 25rem;
 }
 
 .video-container svg {
@@ -866,8 +866,8 @@ header .container {
 
 .top-sellers-item picture,
 .top-sellers-item picture img {
-    width: 368px;
-    height: 464px;
+    width: 23rem;
+    height: 29rem;
 }
 
 .top-sellers-final-part {
@@ -1301,13 +1301,13 @@ footer .container {
 .buy-form-products-item picture {
     object-fit: contain;
     margin-bottom: 0.875rem;
-    width: 120px;
-    height: 107px;
+    width: 7.5rem;
+    height: 6.6875rem;
 }
 
 .buy-form-products-item img {
-    width: 120px;
-    height: 107px;
+    width: 7.5rem;
+    height: 6.6875rem;
     object-fit: contain;
 }
 
@@ -1381,7 +1381,7 @@ footer .container {
     line-height: 1.28;
     letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .buy-form-input:only-of-type {
@@ -1997,7 +1997,7 @@ footer .container {
     }
 
     .scroll-down .scroll-down-svg svg {
-        width: 16px;
+        width: 1rem;
         height: 1rem;
     }
 
@@ -2042,14 +2042,14 @@ footer .container {
     }
 
     .taste-link picture {
-        width: 224px;
-        height: 171px;
+        width: 14rem;
+        height: 10.6875rem;
         margin: 1.75rem auto 1.5625rem auto;
     }
 
     .taste-link picture img {
-        width: 224px;
-        height: 171px;
+        width: 14rem;
+        height: 10.6875rem;
     }
 
     .taste-link:last-child {
@@ -2075,23 +2075,23 @@ footer .container {
     }
 
     .video-container {
-        width: 335px;
-        height: 500px;
+        width: 20.9375rem;
+        height: 31.25rem;
         margin: 0 auto;
     }
 
 
     .video-container picture,
     .video-container picture img {
-        width: 335px;
-        height: 500px;
+        width: 20.9375rem;
+        height: 31.25rem;
         margin: 0 auto;
         display: block;
     }
 
 
     .how-made-text-container {
-        max-width: 614px;
+        max-width: 38.375rem;
         padding: 0 0.875rem 1.25rem 0.875rem;
     }
 
@@ -2213,8 +2213,8 @@ footer .container {
 
     .top-sellers-item picture,
     .top-sellers-item picture img {
-        width: 335px;
-        height: 464px;
+        width: 20.9375rem;
+        height: 29rem;
     }
 
     .top-sellers-text {
@@ -2748,14 +2748,14 @@ footer .container {
     }
 
     .taste-link picture {
-        width: 224px;
-        height: 171px;
+        width: 14rem;
+        height: 10.6875rem;
         margin: 1.75rem auto 1.5625rem auto;
     }
 
     .taste-link picture img {
-        width: 224px;
-        height: 171px;
+        width: 14rem;
+        height: 10.6875rem;
     }
 
     .taste-link:last-child {
@@ -2780,15 +2780,15 @@ footer .container {
 
     .video-container picture,
     .video-container picture img {
-        width: 614px;
-        height: 400px;
+        width: 38.375rem;
+        height: 25rem;
         margin: 0 auto;
         display: block;
     }
 
     .how-made-text-container {
         margin: 0 auto;
-        max-width: 614px;
+        max-width: 38.375rem;
     }
 
     .how-made-text-container ul {
@@ -2896,8 +2896,8 @@ footer .container {
 
     .top-sellers-item picture,
     .top-sellers-item picture img {
-        width: 344px;
-        height: 464px;
+        width: 21.5rem;
+        height: 29rem;
     }
 
     .top-sellers-final-part {
