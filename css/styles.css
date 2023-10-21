@@ -1813,11 +1813,11 @@ footer .container {
 .mobile-menu-close {
     stroke: var(--second-text-c);
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-close-button:hover .mobile-menu-close {
-    scale: 1.4;
+    transform: scale(1.4);
     stroke: var(--company--second-c)
 }
 
