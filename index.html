@@ -1465,6 +1465,7 @@
                   id="user-personal-info-name"
                   class="buy-form-input"
                   placeholder="Name"
+                  pattern="[A-Za-zА-Яа-я]+"
                   required
                 />
                 <input
@@ -1472,6 +1473,7 @@
                   name="user-surname"
                   id="user-personal-info-surname"
                   class="buy-form-input"
+                  pattern="[A-Za-zА-Яа-я]+"
                   placeholder="Surname"
                 />
               </div>
@@ -1483,6 +1485,7 @@
                 name="user-email"
                 id="user-email"
                 class="buy-form-input"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                 placeholder="Enter your email"
               />
             </div>
@@ -1563,6 +1566,7 @@
                 name="leave-review-user-name"
                 id="leave-review-user-name"
                 class="leave-review-form-input"
+                pattern="[A-Za-zА-Яа-я]+"
                 placeholder="Name"
                 required
               />
@@ -1573,6 +1577,7 @@
                 name="leave-review-user-email"
                 id="leave-review-user-email"
                 class="leave-review-form-input"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                 placeholder="Enter your email"
                 required
               />
@@ -1641,6 +1646,7 @@
                   id="subscribe-user-email"
                   class="subscribe-form-input"
                   placeholder="Enter your email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   required
                 />
               </div>
