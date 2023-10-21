@@ -1298,9 +1298,17 @@ footer .container {
     text-align: center;
 }
 
-.buy-form-products-item img {
+.buy-form-products-item picture {
     object-fit: contain;
     margin-bottom: 0.875rem;
+    width: 120px;
+    height: 107px;
+}
+
+.buy-form-products-item img {
+    width: 120px;
+    height: 107px;
+    object-fit: contain;
 }
 
 .product-weight-container {
@@ -2393,6 +2401,7 @@ footer .container {
         align-items: center;
     }
 
+    .buy-form-products-item picture,
     .buy-form-products-item img {
         width: 5.25rem;
         height: 4.3125rem;
