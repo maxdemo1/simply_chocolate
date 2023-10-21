@@ -176,12 +176,19 @@ header .container {
 .hero-content {
     width: 71rem;
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-            rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header.webp);
+            rgba(17, 17, 17, 0.40)), url(../images/backgrounds/hero/desktop/background_1x_desktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 2.375rem;
     padding: 23.75rem 2.5rem 2.5rem 2.5rem;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-content {
+        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/hero/desktop/background_2x_desktop.webp);
+    }
 }
 
 .catchword {
@@ -996,10 +1003,17 @@ header .container {
     width: 75rem;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-            rgba(17, 17, 17, 0.40)), url(../images/backgrounds/footer.webp);
+            rgba(17, 17, 17, 0.40)), url(../images/backgrounds/footer/desktop/footer_bg_1x_desktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .explore-that {
+        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/footer/desktop/footer_bg_2x_desktop.webp);
+    }
 }
 
 .explore-that .container {
@@ -1572,10 +1586,17 @@ footer .container {
     width: 100%;
     height: 12.25rem;
     background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-            rgba(17, 17, 17, 0.40)), url(../images/backgrounds/subscribe-form-bg.webp);
+            rgba(17, 17, 17, 0.40)), url(../images/backgrounds/form/tablet_desktop/bg_form_1x_tablet_desktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .subscribe-form-bg {
+        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/form/tablet_desktop/bg_form_2x_tablet_desktop.webp);
+    }
 }
 
 .form-close-subscribe {
@@ -1853,8 +1874,16 @@ footer .container {
         min-width: 20.9375rem;
         max-width: 100%;
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header_mobile.webp);
+                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/hero/mobile/background_1x_mobile.webp);
         padding: 24.6875rem 1.25rem 1.25rem 1.25rem;
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .hero-content {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                    rgba(17, 17, 17, 0.40)), url(../images/backgrounds/hero/mobile/background_2x_mobile.webp);
+        }
+
     }
 
     .catchword {
@@ -2204,7 +2233,15 @@ footer .container {
         width: 100%;
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
                 rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/footer_mobile.webp);
+            url(../images/backgrounds/footer/mobile/footer_bg_1x_mobile.webp);
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .explore-that {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                    rgba(17, 17, 17, 0.40)),
+                url(../images/backgrounds/footer/mobile/footer_bg_2x_mobile.webp);
+        }
     }
 
     .explore-that .container {
@@ -2434,6 +2471,20 @@ footer .container {
         padding: 0.75rem 1.75rem;
     }
 
+    .subscribe-form-bg {
+        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                rgba(17, 17, 17, 0.40)),
+            url(../images/backgrounds/form/mobile/bg_form_1x_mobile.webp);
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .subscribe-form-bg {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                    rgba(17, 17, 17, 0.40)),
+                url(../images/backgrounds/form/mobile/bg_form_2x_mobile.webp);
+        }
+    }
+
     .subscribe-external-container {
         width: 19.4375rem;
     }
@@ -2538,8 +2589,16 @@ footer .container {
         min-width: 44rem;
         max-width: 100%;
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/header_tablet.webp);
+                rgba(17, 17, 17, 0.40)), url(../images/backgrounds/hero/tablet/background_1x_tablet.webp);
         padding: 41.9375rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .hero-content {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                    rgba(17, 17, 17, 0.40)), url(../images/backgrounds/hero/tablet/background_2x_tablet.webp);
+        }
+
     }
 
     .catchword {
@@ -2844,8 +2903,17 @@ footer .container {
         width: 100%;
         background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
                 rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/footer_tablet.webp);
+            url(../images/backgrounds/footer/tablet/footer_bg_1x_tablet.webp);
     }
+
+    @media screen and (min-resolution: 192dpi) {
+        .explore-that {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
+                    rgba(17, 17, 17, 0.40)),
+                url(../images/backgrounds/footer/tablet/footer_bg_2x_tablet.webp);
+        }
+    }
+
 
     .explore-that .container {
         padding: 4.5rem 9.375rem;
@@ -2873,51 +2941,5 @@ footer .container {
         width: 2rem;
         height: 2rem;
     }
-}
 
-/* IMAGES DESKTOP */
-
-@media (min-resolution: 192dpi) and (min-width: 75rem) {
-    .hero-content {
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/header2x.png);
-        ;
-    }
-
-    .explore-that {
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/footer2x.png);
-    }
-}
-
-@media (min-resolution: 192dpi) and (min-width: 767px) and (max-width: 1199px) {
-    .hero-content {
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/header2x_tablet.png);
-        ;
-    }
-
-    .explore-that {
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/footer2x_tablet.png);
-    }
-}
-
-@media (min-resolution: 192dpi) and (min-width: 375px) and (max-width: 767px) {
-    .hero-content {
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/header2x_mobile.png);
-        ;
-    }
-
-    .explore-that {
-        background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.00),
-                rgba(17, 17, 17, 0.40)),
-            url(../images/backgrounds/footer2x_mobile.png);
-    }
 }
