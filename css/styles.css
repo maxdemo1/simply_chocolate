@@ -1381,7 +1381,7 @@ footer .container {
     line-height: 1.28;
     letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 .buy-form-input:only-of-type {
