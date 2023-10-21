@@ -411,7 +411,7 @@ header .container {
 
 }
 
-.advantages-item h3 {
+.advantages-item h2 {
     color: var(--second-text-c);
     font-size: 1.125rem;
     font-weight: 600;
